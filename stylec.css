@@ -86,7 +86,7 @@ body {
 .hero {
     height: 60vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url("pic/bg3.JPG");
+        url("pic/op.jpg");
     /* Simplified path */
     background-size: cover;
     background-position: 20% 70%;
@@ -599,4 +599,6 @@ body {
     .footer-legal a {
         margin: 0 10px;
     }
+
 }
+
