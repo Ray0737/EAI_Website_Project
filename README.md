@@ -14,7 +14,7 @@ The website is an un official site of the E-AI Major. The data is from official 
 | :--- | :--- |
 | **Tools** | HTML & CSS & JS |
 | **Current Version** | 1.2.0 |
-| **Latest Edit** | January 5, 2026 |
+| **Latest Edit** | January 6, 2026 |
 | **Website Link** | https://eaiwebsiteprojecttrack.vercel.app/ |
 
 ---
