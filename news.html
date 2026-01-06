@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News | SATIT PSM EAI</title>
+    <title class="lang" data-en="News | SATIT PSM EAI" data-th="ข่าว | SATIT PSM EAI">News | SATIT PSM EAI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylen.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,24 +16,27 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top custom-nav">
         <div class="container-fluid px-lg-5">
-            <a class="navbar-brand logo" href="index.html">E-AI Major <span>SATIT PSM</span></a>
+            <a class="navbar-brand logo" href="#">E-AI Major <span>SATIT PSM</span></a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto nav-links align-items-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="curriculum.html">About E-AI</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">News</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="alumni.html">Alumni</a></li>
-                    <li class="nav-item"><a class="nav-link text-white"
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Home" data-th="หน้าหลัก"
+                            href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="About E-AI"
+                            data-th="เกี่ยวกับ E-AI" href="curriculum.html">About E-AI</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="News" data-th="ข่าวสาร"
+                            href="#">News</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Alumni" data-th="ศิษย์เก่า"
+                            href="alumni.html">Alumni</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Contact" data-th="ติดต่อ"
                             href="https://linktr.ee/eaisatitpsm?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnwaCsmcwnSQnG0TkPJGgGh_SO1jbiPYik8-NaHzqU2ClP7HTSX3JdMEcU9bY_aem_JT9tkW3ldPv0pfjRWFzu8w">Contact</a>
                     </li>
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <button class="cta-btn">Join Us</button>
+                    <li class="nav-item ms-lg-3">
+                        <button id="lang-switch" class="btn btn-outline-light btn-sm">TH</button>
                     </li>
                 </ul>
             </div>
@@ -42,15 +45,17 @@
 
     <header class="news-hero-banner mt-5">
         <div class="container">
-            <h1 class="display-3 fw-bold">News & Events</h1>
+            <h1 class="display-3 fw-bold lang" data-en="News & Events" data-th="ข่าวสารและกิจกรรม">News & Events</h1>
         </div>
     </header>
 
     <nav class="breadcrumb-nav py-3 border-bottom border-secondary">
         <div class="container">
             <p class="mb-0 text-secondary" style="font-size: 0.85rem;">
-                <a href="curriculum.html" class="text-secondary text-decoration-none">About E-AI</a>
-                <i class="bi bi-chevron-right mx-2" style="font-size: 0.7rem;"></i> News
+                <a href="curriculum.html" class="text-secondary text-decoration-none lang" data-en="About E-AI"
+                    data-th="เกี่ยวกับ E-AI">About E-AI</a>
+                <i class="bi bi-chevron-right mx-2" style="font-size: 0.7rem;"></i>
+                <span class="lang" data-en="News" data-th="ข่าวสาร">News</span>
             </p>
         </div>
     </nav>
@@ -63,7 +68,8 @@
                         <a href="#collapseNews1"
                             class="text-white text-decoration-none hover-red d-flex justify-content-between align-items-center"
                             data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseNews1">
-                            Future Automotive Labs
+                            <span class="lang" data-en="Future Automotive Labs"
+                                data-th="ห้องปฏิบัติการยานยนต์แห่งอนาคต">Future Automotive Labs</span>
                             <i class="bi bi-chevron-down small opacity-50"></i>
                         </a>
                     </h2>
@@ -72,38 +78,63 @@
                     <div class="collapse" id="collapseNews1">
                         <div class="news-content text-secondary opacity-75 pt-3">
                             <p>
-                                An extraordinary collaboration between M.5 students from two majors — <strong>AI
-                                    Engineering x EV Engineering</strong>.
-                                Together, they designed integrated Electric Vehicle (EV) and Autonomous Vehicle (AV)
-                                systems.
-                                Over the past two weeks, students assembled their own EV kits and developed
-                                sophisticated software to power them.
+                                <span class="lang"
+                                    data-en="An extraordinary collaboration between M.5 students from two majors — AI Engineering x EV Engineering."
+                                    data-th="ความร่วมมือที่ไม่ธรรมดาระหว่างนักเรียน ม.5 จากสองสาขา — วิศวกรรม AI x วิศวกรรม EV">An
+                                    extraordinary collaboration between M.5 students from two majors — <strong>AI
+                                        Engineering x EV Engineering</strong>.</span>
+                                <span class="lang"
+                                    data-en="Together, they designed integrated Electric Vehicle (EV) and Autonomous Vehicle (AV) systems."
+                                    data-th="ร่วมกันออกแบบระบบยานยนต์ไฟฟ้า (EV) และยานยนต์อัตโนมัติ (AV).">Together,
+                                    they designed integrated Electric Vehicle (EV) and Autonomous Vehicle (AV)
+                                    systems.</span>
+                                <span class="lang"
+                                    data-en="Over the past two weeks, students assembled their own EV kits and developed sophisticated software to power them."
+                                    data-th="ในช่วงสองสัปดาห์ที่ผ่านมา นักเรียนได้ประกอบชุด EV ของตนเองและพัฒนาซอฟต์แวร์ที่ซับซ้อนเพื่อขับเคลื่อนมัน.">Over
+                                    the past two weeks, students assembled their own EV kits and developed sophisticated
+                                    software to power them.</span>
                             </p>
 
                             <div class="row mt-4">
                                 <div class="col-md-4 mb-4">
-                                    <h5 class="text-white h6">Phase 1: Holistic Systems</h5>
-                                    <p class="small">Students explored how EVs and AVs merge mechanical design,
-                                        electronics, and AI while adhering to real-world industrial standards.</p>
+                                    <h5 class="text-white h6 lang" data-en="Phase 1: Holistic Systems"
+                                        data-th="ขั้นตอนที่ 1: ระบบที่ครอบคลุม">Phase 1: Holistic Systems</h5>
+                                    <p class="small lang"
+                                        data-en="Students explored how EVs and AVs merge mechanical design, electronics, and AI while adhering to real-world industrial standards."
+                                        data-th="นักเรียนได้สำรวจว่ารถ EV และ AV รวมการออกแบบทางกล อิเล็กทรอนิกส์ และ AI อย่างไร โดยยึดตามมาตรฐานอุตสาหกรรมจริง.">
+                                        Students explored how EVs and AVs merge mechanical design, electronics, and AI
+                                        while adhering to real-world industrial standards.</p>
                                 </div>
                                 <div class="col-md-4 mb-4">
-                                    <h5 class="text-white h6">Phase 2: From Circuit to Car</h5>
-                                    <p class="small">Using ESP32, IMU sensors, and Arduino IDE, teams programmed two
-                                        driving modes: <strong>Manual</strong> and <strong>AI-Controlled</strong>.</p>
+                                    <h5 class="text-white h6 lang" data-en="Phase 2: From Circuit to Car"
+                                        data-th="ขั้นตอนที่ 2: จากวงจรสู่รถ">Phase 2: From Circuit to Car</h5>
+                                    <p class="small lang"
+                                        data-en="Using ESP32, IMU sensors, and Arduino IDE, teams programmed two driving modes: Manual and AI-Controlled."
+                                        data-th="โดยใช้ ESP32, เซ็นเซอร์ IMU และ Arduino IDE ทีมงานได้โปรแกรมโหมดการขับขี่สองโหมด: โหมดแมนนวลและโหมดควบคุมด้วย AI.">
+                                        Using ESP32, IMU sensors, and Arduino IDE, teams programmed two driving modes:
+                                        <strong>Manual</strong> and <strong>AI-Controlled</strong>.
+                                    </p>
                                 </div>
                                 <div class="col-md-4 mb-4">
-                                    <h5 class="text-white h6">Phase 3: Competition Day</h5>
-                                    <p class="small">The lab became a racetrack. Students tested their systems on the
-                                        Manual Track and the AI Track.</p>
+                                    <h5 class="text-white h6 lang" data-en="Phase 3: Competition Day"
+                                        data-th="ขั้นตอนที่ 3: วันแข่งขัน">Phase 3: Competition Day</h5>
+                                    <p class="small lang"
+                                        data-en="The lab became a racetrack. Students tested their systems on the Manual Track and the AI Track."
+                                        data-th="ห้องปฏิบัติการกลายเป็นสนามแข่ง นักเรียนได้ทดสอบระบบของตนบนสนามแมนนวลและสนาม AI.">
+                                        The lab became a racetrack. Students tested their systems on the Manual Track
+                                        and the AI Track.</p>
                                 </div>
                             </div>
 
                             <div class="mt-4 p-3 border-start border-danger bg-dark mb-4">
-                                <p class="mb-0 small">Special thanks to <strong>KX Knowledge Xchange</strong> for their
-                                    support.</p>
+                                <p class="mb-0 small lang"
+                                    data-en="Special thanks to KX Knowledge Xchange for their support."
+                                    data-th="ขอขอบคุณเป็นพิเศษต่อ KX Knowledge Xchange สำหรับการสนับสนุน.">Special
+                                    thanks to <strong>KX Knowledge Xchange</strong> for their support.</p>
                                 <a href="https://fablabbkk.com/innovation-in-motion-co-designing-future-mobility/"
-                                    target="_blank" class="text-danger small text-decoration-none">Read the full report
-                                    <i class="bi bi-box-arrow-up-right"></i></a>
+                                    target="_blank" class="text-danger small text-decoration-none lang"
+                                    data-en="Read the full report" data-th="อ่านรายงานฉบับเต็ม">Read the full report <i
+                                        class="bi bi-box-arrow-up-right"></i></a>
                             </div>
 
                             <div class="news-bottom-focus mt-5">
@@ -114,10 +145,13 @@
                     </div>
 
                     <div class="mt-4">
-                        <span class="news-tag-pill">Field Trip</span>
-                        <span class="news-tag-pill">AI Engineering</span>
-                        <span class="news-tag-pill">EV Engineering</span>
-                        <span class="news-tag-pill">M.5</span>
+                        <span class="news-tag-pill lang" data-en="Field Trip" data-th="การเดินทางเพื่อการศึกษา">Field
+                            Trip</span>
+                        <span class="news-tag-pill lang" data-en="AI Engineering" data-th="วิศวกรรม AI">AI
+                            Engineering</span>
+                        <span class="news-tag-pill lang" data-en="EV Engineering" data-th="วิศวกรรม EV">EV
+                            Engineering</span>
+                        <span class="news-tag-pill lang" data-en="M.5" data-th="ม.5">M.5</span>
                     </div>
                 </article>
 
@@ -127,7 +161,8 @@
                             class="text-white text-decoration-none hover-red d-flex justify-content-between align-items-center"
                             data-bs-toggle="collapse" role="button" aria-expanded="false"
                             aria-controls="collapseNewsSRT">
-                            SRT Red Line Maintenance Facility
+                            <span class="lang" data-en="SRT Red Line Maintenance Facility"
+                                data-th="สถานที่บำรุงรักษาสายสีแดง SRT">SRT Red Line Maintenance Facility</span>
                             <i class="bi bi-chevron-down small opacity-50"></i>
                         </a>
                     </h2>
@@ -136,39 +171,59 @@
                     <div class="collapse" id="collapseNewsSRT">
                         <div class="news-content text-secondary opacity-75 pt-3">
                             <p>
-                                Our <strong>M.4 E-AI students</strong> recently took their learning beyond the classroom
-                                with an exclusive site visit to the
-                                <strong>SRT Red Line Maintenance Facility</strong> at Bang Sue Grand Station. This field
-                                trip provided a
-                                firsthand look at the massive engineering infrastructure required to keep Bangkok's
-                                modern transit system running.
+                                <span class="lang"
+                                    data-en="Our M.4 E-AI students recently took their learning beyond the classroom with an exclusive site visit to the SRT Red Line Maintenance Facility at Bang Sue Grand Station."
+                                    data-th="นักเรียน ม.4 สาขา E-AI ของเราได้ขยายการเรียนรู้ไปนอกห้องเรียนด้วยการเยี่ยมชมสถานที่บำรุงรักษาสายสีแดง SRT ที่สถานี Bang Sue Grand.">Our
+                                    <strong>M.4 E-AI students</strong> recently took their learning beyond the classroom
+                                    with an exclusive site visit to the <strong>SRT Red Line Maintenance
+                                        Facility</strong> at Bang Sue Grand Station.</span>
+                                <span class="lang"
+                                    data-en="This field trip provided a firsthand look at the massive engineering infrastructure required to keep Bangkok's modern transit system running."
+                                    data-th="การเดินทางเพื่อการศึกษานี้มอบมุมมองตรงถึงโครงสร้างพื้นฐานทางวิศวกรรมขนาดใหญ่ที่จำเป็นในการทำให้ระบบขนส่งสมัยใหม่ของกรุงเทพฯ ทำงาน.">This
+                                    field trip provided a firsthand look at the massive engineering infrastructure
+                                    required to keep Bangkok's modern transit system running.</span>
                             </p>
 
                             <div class="row mt-4">
                                 <div class="col-md-4 mb-4">
                                     <h5 class="text-white h6"><i
-                                            class="bi bi-gear-wide-connected me-2 text-danger"></i>Rolling Stock</h5>
-                                    <p class="small">Students toured the heavy maintenance area, observing the
-                                        mechanical systems and wheel-lathe machines used for electric trainsets.</p>
+                                            class="bi bi-gear-wide-connected me-2 text-danger"></i><span class="lang"
+                                            data-en="Rolling Stock" data-th="Rolling Stock">Rolling Stock</span></h5>
+                                    <p class="small lang"
+                                        data-en="Students toured the heavy maintenance area, observing the mechanical systems and wheel-lathe machines used for electric trainsets."
+                                        data-th="นักเรียนได้เยี่ยมชมพื้นที่บำรุงรักษาหนัก สังเกตระบบกลไกและเครื่องจักรล้อที่ใช้สำหรับรถไฟฟ้า.">
+                                        Students toured the heavy maintenance area, observing the mechanical systems and
+                                        wheel-lathe machines used for electric trainsets.</p>
                                 </div>
                                 <div class="col-md-4 mb-4">
-                                    <h5 class="text-white h6"><i class="bi bi-cpu me-2 text-danger"></i>Signaling &
-                                        Control</h5>
-                                    <p class="small">A deep dive into the automated signaling systems that manage train
-                                        frequency and safety via real-time data processing.</p>
+                                    <h5 class="text-white h6"><i class="bi bi-cpu me-2 text-danger"></i><span
+                                            class="lang" data-en="Signaling & Control"
+                                            data-th="สัญญาณและควบคุม">Signaling & Control</span></h5>
+                                    <p class="small lang"
+                                        data-en="A deep dive into the automated signaling systems that manage train frequency and safety via real-time data processing."
+                                        data-th="การเจาะลึกเข้าไปในระบบสัญญาณอัตโนมัติที่จัดการความถี่และความปลอดภัยของรถไฟผ่านการประมวลผลข้อมูลแบบเรียลไทม์.">
+                                        A deep dive into the automated signaling systems that manage train frequency and
+                                        safety via real-time data processing.</p>
                                 </div>
                                 <div class="col-md-4 mb-4">
                                     <h5 class="text-white h6"><i
-                                            class="bi bi-lightning-charge me-2 text-danger"></i>Power Supply</h5>
-                                    <p class="small">Understanding the Overhead Catenary System (OCS) and how
-                                        high-voltage power is converted for propulsion.</p>
+                                            class="bi bi-lightning-charge me-2 text-danger"></i><span class="lang"
+                                            data-en="Power Supply" data-th="แหล่งจ่ายไฟ">Power Supply</span></h5>
+                                    <p class="small lang"
+                                        data-en="Understanding the Overhead Catenary System (OCS) and how high-voltage power is converted for propulsion."
+                                        data-th="ทำความเข้าใจเกี่ยวกับระบบสายไฟเหนือศีรษะ (OCS) และวิธีที่ไฟฟ้าระดับแรงดันสูงถูกแปลงเพื่อขับเคลื่อน.">
+                                        Understanding the Overhead Catenary System (OCS) and how high-voltage power is
+                                        converted for propulsion.</p>
                                 </div>
                             </div>
 
                             <div class="mt-4 p-3 border-start border-danger bg-dark mb-4">
-                                <p class="mb-0 small text-white">"Seeing the scale of these industrial AI and
-                                    engineering applications inspires our students to think about how their coding
-                                    projects can solve national infrastructure challenges."</p>
+                                <p class="mb-0 small text-white lang"
+                                    data-en='"Seeing the scale of these industrial AI and engineering applications inspires our students to think about how their coding projects can solve national infrastructure challenges."'
+                                    data-th='"การเห็นขนาดของการประยุกต์ใช้ AI และวิศวกรรมอุตสาหกรรมเหล่านี้สร้างแรงบันดาลใจให้นักเรียนของเราคิดว่าผลิตภัณฑ์การเขียนโค้ดของพวกเขาสามารถแก้ปัญหาสิ่งอำนวยความสะดวกของประเทศได้อย่างไร."'>
+                                    "Seeing the scale of these industrial AI and engineering applications inspires our
+                                    students to think about how their coding projects can solve national infrastructure
+                                    challenges."</p>
                                 <span class="small opacity-50">— E-AI Program Instructor</span>
                             </div>
 
@@ -180,8 +235,9 @@
                     </div>
 
                     <div class="mt-4">
-                        <span class="news-tag-pill">Field Trip</span>
-                        <span class="news-tag-pill">M.4</span>
+                        <span class="news-tag-pill lang" data-en="Field Trip" data-th="การเดินทางเพื่อการศึกษา">Field
+                            Trip</span>
+                        <span class="news-tag-pill lang" data-en="M.4" data-th="ม.4">M.4</span>
                     </div>
                 </article>
 
@@ -191,7 +247,9 @@
                             class="text-white text-decoration-none hover-red d-flex justify-content-between align-items-center"
                             data-bs-toggle="collapse" role="button" aria-expanded="false"
                             aria-controls="collapseNewsEEC">
-                            EEC Automation Park & Analog Devices
+                            <span class="lang" data-en="EEC Automation Park & Analog Devices"
+                                data-th="EEC Automation Park & Analog Devices">EEC Automation Park & Analog
+                                Devices</span>
                             <i class="bi bi-chevron-down small opacity-50"></i>
                         </a>
                     </h2>
@@ -200,37 +258,53 @@
                     <div class="collapse" id="collapseNewsEEC">
                         <div class="news-content text-secondary opacity-75 pt-3">
                             <p>
-                                A massive cross-major collaboration took place as students from <strong>AI Engineering,
-                                    Electrical Engineering (EE), and Interactive Media (IM)</strong>
-                                traveled to Chonburi for a deep dive into the heart of Thailand's Eastern Economic
-                                Corridor (EEC). The mission: to witness the bridge between
-                                classroom theory and industrial-scale automation.
+                                <span class="lang"
+                                    data-en="A massive cross-major collaboration took place as students from AI Engineering, Electrical Engineering (EE), and Interactive Media (IM) traveled to Chonburi for a deep dive into the heart of Thailand's Eastern Economic Corridor (EEC)."
+                                    data-th="ความร่วมมือข้ามสาขาขนาดใหญ่เกิดขึ้นเมื่อนักเรียนจากวิศวกรรม AI, วิศวกรรมไฟฟ้า (EE) และสื่อเชิงโต้ตอบ (IM) เดินทางไปยังชลบุรีเพื่อเจาะลึกไปยังหัวใจของเขตเศรษฐกิจตะวันออก (EEC).">A
+                                    massive cross-major collaboration took place as students from <strong>AI
+                                        Engineering, Electrical Engineering (EE), and Interactive Media (IM)</strong>
+                                    traveled to Chonburi for a deep dive into the heart of Thailand's Eastern Economic
+                                    Corridor (EEC).</span>
+                                <span class="lang"
+                                    data-en="The mission: to witness the bridge between classroom theory and industrial-scale automation."
+                                    data-th="ภารกิจ: เพื่อเป็นสักขีพยานในการเชื่อมโยงระหว่างทฤษฎีในห้องเรียนและการทำงานอัตโนมัติในระดับอุตสาหกรรม.">The
+                                    mission: to witness the bridge between classroom theory and industrial-scale
+                                    automation.</span>
                             </p>
 
                             <div class="row mt-4">
                                 <div class="col-md-6 mb-4">
-                                    <h5 class="text-white h6"><i class="bi bi-robot me-2 text-danger"></i>EEC Automation
-                                        Park</h5>
-                                    <p class="small">Located at Burapha University, students engaged in hands-on
-                                        workshops focused on Industrial IoT (IIoT), smart factory systems, and
-                                        high-precision robotics used in modern manufacturing lines.</p>
+                                    <h5 class="text-white h6"><i class="bi bi-robot me-2 text-danger"></i><span
+                                            class="lang" data-en="EEC Automation Park" data-th="EEC Automation Park">EEC
+                                            Automation Park</span></h5>
+                                    <p class="small lang"
+                                        data-en="Located at Burapha University, students engaged in hands-on workshops focused on Industrial IoT (IIoT), smart factory systems, and high-precision robotics used in modern manufacturing lines."
+                                        data-th="ตั้งอยู่ที่มหาวิทยาลัยบูรพา นักเรียนได้เข้าร่วมเวิร์คช็อปเชิงปฏิบัติที่มุ่งเน้นไปที่ Industrial IoT (IIoT), ระบบโรงงานอัจฉริยะ และหุ่นยนต์ความแม่นยำสูงที่ใช้ในสายการผลิตสมัยใหม่.">
+                                        Located at Burapha University, students engaged in hands-on workshops focused on
+                                        Industrial IoT (IIoT), smart factory systems, and high-precision robotics used
+                                        in modern manufacturing lines.</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <h5 class="text-white h6"><i class="bi bi-motherboard me-2 text-danger"></i>Analog
-                                        Devices (Thailand)</h5>
-                                    <p class="small">A rare opportunity to visit a global leader in semiconductor and
-                                        signal processing. Students observed the clean-room environments and high-tech
-                                        testing processes for integrated circuits.</p>
+                                    <h5 class="text-white h6"><i class="bi bi-motherboard me-2 text-danger"></i><span
+                                            class="lang" data-en="Analog Devices (Thailand)"
+                                            data-th="Analog Devices (ประเทศไทย)">Analog Devices (Thailand)</span></h5>
+                                    <p class="small lang"
+                                        data-en="A rare opportunity to visit a global leader in semiconductor and signal processing. Students observed the clean-room environments and high-tech testing processes for integrated circuits."
+                                        data-th="โอกาสที่หายากในการเยี่ยมชมผู้นำระดับโลกด้านเซมิคอนดักเตอร์และการประมวลผลสัญญาณ นักเรียนได้สังเกตสภาพแวดล้อมในห้องสะอาดและกระบวนการทดสอบเทคโนโลยีขั้นสูงสำหรับวงจรรวม.">
+                                        A rare opportunity to visit a global leader in semiconductor and signal
+                                        processing. Students observed the clean-room environments and high-tech testing
+                                        processes for integrated circuits.</p>
                                 </div>
                             </div>
 
                             <div class="mt-4 p-3 border-start border-danger bg-dark mb-4">
-                                <p class="mb-0 small">
+                                <p class="mb-0 small lang"
+                                    data-en="This joint field trip allowed students to see how AI software controls Electrical hardware, and how Interactive Media is used to visualize industrial data through Human-Machine Interfaces (HMI)."
+                                    data-th="การเดินทางเพื่อการศึกษาร่วมกันนี้ช่วยให้นักเรียนเห็นว่า ซอฟต์แวร์ AI ควบคุมฮาร์ดแวร์ไฟฟ้าได้อย่างไร และมีการใช้สื่อเชิงโต้ตอบเพื่อแสดงข้อมูลทางอุตสาหกรรมผ่าน Human-Machine Interfaces (HMI) ได้อย่างไร.">
                                     This joint field trip allowed students to see how <strong>AI</strong> software
-                                    controls <strong>Electrical</strong> hardware,
-                                    and how <strong>Interactive Media</strong> is used to visualize industrial data
-                                    through Human-Machine Interfaces (HMI).
-                                </p>
+                                    controls <strong>Electrical</strong> hardware, and how <strong>Interactive
+                                        Media</strong> is used to visualize industrial data through Human-Machine
+                                    Interfaces (HMI).</p>
                             </div>
 
                             <div class="news-bottom-focus2 mt-5">
@@ -241,10 +315,12 @@
                     </div>
 
                     <div class="mt-4">
-                        <span class="news-tag-pill">Field Trip</span>
-                        <span class="news-tag-pill">Automation</span>
-                        <span class="news-tag-pill">M.4</span>
-                        <span class="news-tag-pill">Chonburi</span>
+                        <span class="news-tag-pill lang" data-en="Field Trip" data-th="การเดินทางเพื่อการศึกษา">Field
+                            Trip</span>
+                        <span class="news-tag-pill lang" data-en="Automation"
+                            data-th="การทำงานอัตโนมัติ">Automation</span>
+                        <span class="news-tag-pill lang" data-en="M.4" data-th="ม.4">M.4</span>
+                        <span class="news-tag-pill lang" data-en="Chonburi" data-th="ชลบุรี">Chonburi</span>
                     </div>
                 </article>
 
@@ -254,7 +330,8 @@
                             class="text-white text-decoration-none hover-red d-flex justify-content-between align-items-center"
                             data-bs-toggle="collapse" role="button" aria-expanded="false"
                             aria-controls="collapseNewsCiRA">
-                            CiRA CORE Platform Workshop
+                            <span class="lang" data-en="CiRA CORE Platform Workshop"
+                                data-th="กิจกรรมอบรมแพลตฟอร์ม CiRA CORE">CiRA CORE Platform Workshop</span>
                             <i class="bi bi-chevron-down small opacity-50"></i>
                         </a>
                     </h2>
@@ -263,33 +340,44 @@
                     <div class="collapse" id="collapseNewsCiRA">
                         <div class="news-content text-secondary opacity-75 pt-3">
                             <p>
-                                Our <strong>M.4 E-AI students</strong> participated in an intensive AI Programming
-                                workshop led by experts from
-                                <strong>KMITL (King Mongkut's Institute of Technology Ladkrabang)</strong>. The session
-                                focused on utilizing
-                                <strong>CiRA CORE</strong>, a powerful platform for industrial-grade computer vision and
-                                AI application development.
+                                <span class="lang"
+                                    data-en="Our M.4 E-AI students participated in an intensive AI Programming workshop led by experts from KMITL (King Mongkut's Institute of Technology Ladkrabang)."
+                                    data-th="นักเรียน ม.4 สาขา E-AI ของเราได้เข้าร่วมการอบรมการเขียนโปรแกรม AI ที่เข้มข้นซึ่งจัดโดยผู้เชี่ยวชาญจาก KMITL (สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง).">Our
+                                    <strong>M.4 E-AI students</strong> participated in an intensive AI Programming
+                                    workshop led by experts from <strong>KMITL (King Mongkut's Institute of Technology
+                                        Ladkrabang)</strong>.</span>
+                                <span class="lang"
+                                    data-en="The session focused on utilizing CiRA CORE, a powerful platform for industrial-grade computer vision and AI application development."
+                                    data-th="การอบรมมุ่งเน้นไปที่การใช้ CiRA CORE ซึ่งเป็นแพลตฟอร์มที่มีประสิทธิภาพสำหรับการพัฒนาภาพคอมพิวเตอร์และการใช้งาน AI ในระดับอุตสาหกรรม.">The
+                                    session focused on utilizing <strong>CiRA CORE</strong>, a powerful platform for
+                                    industrial-grade computer vision and AI application development.</span>
                             </p>
 
                             <div class="row mt-4">
                                 <div class="col-md-6 mb-4">
-                                    <h5 class="text-white h6"><i class="bi bi-search me-2 text-danger"></i>DeepDetect
-                                        Modeling</h5>
-                                    <p class="small">Students learned the full pipeline: preparing datasets, labeling
-                                        images, and training <strong>DeepDetect models</strong> for real-time object
-                                        recognition.</p>
+                                    <h5 class="text-white h6"><i class="bi bi-search me-2 text-danger"></i><span
+                                            class="lang" data-en="DeepDetect Modeling"
+                                            data-th="การสร้างแบบจำลอง DeepDetect">DeepDetect Modeling</span></h5>
+                                    <p class="small lang"
+                                        data-en="Students learned the full pipeline: preparing datasets, labeling images, and training DeepDetect models for real-time object recognition."
+                                        data-th="นักเรียนได้เรียนรู้กระบวนการทั้งหมด: การเตรียมชุดข้อมูล, การติดป้ายภาพ และการฝึกอบรมโมเดล DeepDetect สำหรับการรู้จำวัตถุแบบเรียลไทม์.">
+                                        Students learned the full pipeline: preparing datasets, labeling images, and
+                                        training <strong>DeepDetect models</strong> for real-time object recognition.
+                                    </p>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <h5 class="text-white h6"><i class="bi bi-code-slash me-2 text-danger"></i>System
-                                        Integration</h5>
-                                    <p class="small">The curriculum covered processing <strong>DeepDetect payloads using
+                                    <h5 class="text-white h6"><i class="bi bi-code-slash me-2 text-danger"></i><span
+                                            class="lang" data-en="System Integration" data-th="การรวมระบบ">System
+                                            Integration</span></h5>
+                                    <p class="small lang"
+                                        data-en="The curriculum covered processing DeepDetect payloads using JavaScript and bridging AI outputs to physical Arduino hardware."
+                                        data-th="หลักสูตรครอบคลุมการประมวลผล Payload ของ DeepDetect โดยใช้ JavaScript และการเชื่อมโยงผลลัพธ์ AI กับฮาร์ดแวร์ Arduino ที่เป็นรูปธรรม.">
+                                        The curriculum covered processing <strong>DeepDetect payloads using
                                             JavaScript</strong> and bridging AI outputs to physical
                                         <strong>Arduino</strong> hardware.
                                     </p>
                                 </div>
                             </div>
-
-
 
                             <div class="mt-4 p-3 border-start border-danger bg-dark mb-4">
                                 <h6 class="text-white small mb-2">Special Thanks to our Guest Speakers:</h6>
@@ -308,10 +396,10 @@
                     </div>
 
                     <div class="mt-4">
-                        <span class="news-tag-pill">Workshop</span>
-                        <span class="news-tag-pill">CiRA CORE</span>
-                        <span class="news-tag-pill">M.4</span>
-                        <span class="news-tag-pill">Coding</span>
+                        <span class="news-tag-pill lang" data-en="Workshop" data-th="การอบรม">Workshop</span>
+                        <span class="news-tag-pill lang" data-en="CiRA CORE" data-th="CiRA CORE">CiRA CORE</span>
+                        <span class="news-tag-pill lang" data-en="M.4" data-th="ม.4">M.4</span>
+                        <span class="news-tag-pill lang" data-en="Coding" data-th="การเขียนโค้ด">Coding</span>
                     </div>
                 </article>
 
@@ -321,7 +409,9 @@
                             class="text-white text-decoration-none hover-red d-flex justify-content-between align-items-center"
                             data-bs-toggle="collapse" role="button" aria-expanded="false"
                             aria-controls="collapseNewsConnection">
-                            2025 Freshmen Welcoming Activity (COM Major)
+                            <span class="lang" data-en="2025 Freshmen Welcoming Activity (COM Major)"
+                                data-th="กิจกรรมต้อนรับนักศึกษาใหม่ปี 2025 (สาขา COM)">2025 Freshmen Welcoming Activity
+                                (COM Major)</span>
                             <i class="bi bi-chevron-down small opacity-50"></i>
                         </a>
                     </h2>
@@ -330,42 +420,60 @@
                     <div class="collapse" id="collapseNewsConnection">
                         <div class="news-content text-secondary opacity-75 pt-3">
                             <p>
-                                Beyond coding and circuits, the heart of our major is our community. This week, we
-                                hosted the
-                                <strong>"Connecting the Nodes"</strong> event—our traditional <em>Sae-Rahas</em>
-                                (Mentorship) reveal.
-                                Upperclassmen finally revealed their identities to their M.4 "Code-Juniors" in an
-                                atmosphere filled with warmth and friendship.
+                                <span class="lang"
+                                    data-en="Beyond coding and circuits, the heart of our major is our community."
+                                    data-th="นอกเหนือจากการเขียนโปรแกรมและวงจร หัวใจสำคัญของสาขาของเราคือชุมชนของเรา.">Beyond
+                                    coding and circuits, the heart of our major is our community.</span>
+                                <span class="lang"
+                                    data-en="This week, we hosted the 'Connecting the Nodes' event—our traditional Sae-Rahas (Mentorship) reveal."
+                                    data-th="ในสัปดาห์นี้ เราได้จัดกิจกรรม 'เชื่อมต่อจุด' — การเปิดเผย Sae-Rahas (การให้คำปรึกษา) แบบดั้งเดิมของเรา.">This
+                                    week, we hosted the <strong>"Connecting the Nodes"</strong> event—our traditional
+                                    <em>Sae-Rahas</em> (Mentorship) reveal.</span>
+                                <span class="lang"
+                                    data-en="Upperclassmen finally revealed their identities to their M.4 'Code-Juniors' in an atmosphere filled with warmth and friendship."
+                                    data-th="นักเรียนชั้นสูงสุดได้เปิดเผยตัวตนของตนต่อ 'Code-Juniors' ม.4 ในบรรยากาศที่เต็มไปด้วยความอบอุ่นและมิตรภาพ.">Upperclassmen
+                                    finally revealed their identities to their M.4 "Code-Juniors" in an atmosphere
+                                    filled with warmth and friendship.</span>
                             </p>
 
                             <div class="row mt-4">
                                 <div class="col-md-6 mb-4">
-                                    <h5 class="text-white h6"><i class="bi bi-people-fill me-2 text-danger"></i>Building
-                                        the Network</h5>
-                                    <p class="small">The mentorship system ensures that younger students have a support
-                                        network for both academic advice and life within the E-AI major.</p>
+                                    <h5 class="text-white h6"><i class="bi bi-people-fill me-2 text-danger"></i><span
+                                            class="lang" data-en="Building the Network"
+                                            data-th="การสร้างเครือข่าย">Building the Network</span></h5>
+                                    <p class="small lang"
+                                        data-en="The mentorship system ensures that younger students have a support network for both academic advice and life within the E-AI major."
+                                        data-th="ระบบการให้คำปรึกษาช่วยให้มั่นใจว่านักเรียนรุ่นน้องมีเครือข่ายสนับสนุนสำหรับการให้คำแนะนำทางวิชาการและชีวิตในสาขา E-AI.">
+                                        The mentorship system ensures that younger students have a support network for
+                                        both academic advice and life within the E-AI major.</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
                                     <h5 class="text-white h6"><i
-                                            class="bi bi-chat-heart-fill me-2 text-danger"></i>Lasting Memories</h5>
-                                    <p class="small">Students participated in ice-breaking activities and gift
-                                        exchanges, strengthening the bond between different generations of AI
-                                        innovators.</p>
+                                            class="bi bi-chat-heart-fill me-2 text-danger"></i><span class="lang"
+                                            data-en="Lasting Memories" data-th="ความทรงจำที่ยั่งยืน">Lasting
+                                            Memories</span></h5>
+                                    <p class="small lang"
+                                        data-en="Students participated in ice-breaking activities and gift exchanges, strengthening the bond between different generations of AI innovators."
+                                        data-th="นักเรียนเข้าร่วมกิจกรรมทำความรู้จักและการแลกเปลี่ยนของขวัญ เสริมสร้างความสัมพันธ์ระหว่างนักนวัตกรรม AI รุ่นต่างๆ.">
+                                        Students participated in ice-breaking activities and gift exchanges,
+                                        strengthening the bond between different generations of AI innovators.</p>
                                 </div>
                             </div>
 
                             <div class="mt-4 p-3 border-start border-danger bg-dark mb-4">
-                                <p class="mb-0 small text-white">
-                                    "Innovation happens best when we work together. Today wasn't just about meeting
-                                    seniors; it was about integrating into the E-AI family."
-                                </p>
+                                <p class="mb-0 small text-white lang"
+                                    data-en='"Innovation happens best when we work together. Today wasn\' t just about
+                                    meeting seniors; it was about integrating into the E-AI family."'
+                                    data-th='"นวัตกรรมเกิดขึ้นได้ดีที่สุดเมื่อเราทำงานร่วมกัน วันนี้ไม่ใช่แค่การพบปะกับรุ่นพี่ แต่เป็นการรวมตัวเข้ากับครอบครัว E-AI.">'
+                                    Innovation happens best when we work together. Today wasn't just about meeting
+                                    seniors; it was about integrating into the E-AI family.'</p>
                             </div>
 
                             <div class="mt-4">
                                 <a href="https://www.facebook.com/share/p/1BVLLm1biP/" target="_blank"
-                                    class="text-danger small text-decoration-none">
-                                    View full gallery on Facebook <i class="bi bi-facebook ms-1"></i>
-                                </a>
+                                    class="text-danger small text-decoration-none lang"
+                                    data-en="View full gallery on Facebook" data-th="ดูแกลเลอรี่ทั้งหมดบน Facebook">View
+                                    full gallery on Facebook <i class="bi bi-facebook ms-1"></i></a>
                             </div>
 
                             <div class="news-bottom-focus mt-5">
@@ -376,10 +484,9 @@
                     </div>
 
                     <div class="mt-4">
-                        <span class="news-tag-pill">M.4</span>
-                        <span class="news-tag-pill">M.5</span>
-                        <span class="news-tag-pill">Community</span>
-
+                        <span class="news-tag-pill lang" data-en="M.4" data-th="ม.4">M.4</span>
+                        <span class="news-tag-pill lang" data-en="M.5" data-th="ม.5">M.5</span>
+                        <span class="news-tag-pill lang" data-en="Community" data-th="ชุมชน">Community</span>
                     </div>
                 </article>
 
@@ -389,48 +496,60 @@
                             class="text-white text-decoration-none hover-red d-flex justify-content-between align-items-center"
                             data-bs-toggle="collapse" role="button" aria-expanded="false"
                             aria-controls="collapseNewsHackathon">
-                            AI & EE Camp 2025
+                            <span class="lang" data-en="AI & EE Camp 2025" data-th="ค่าย AI & EE 2025">AI & EE Camp
+                                2025</span>
                             <i class="bi bi-chevron-down small opacity-50"></i>
                         </a>
                     </h2>
-                    <p class="text-secondary small mb-3">March 18 - 20, 2025 | Rayong, Thailand</p>
+                    <p class="text-secondary small mb-3"><span class="lang"
+                            data-en="March 18 - 20, 2025 | Rayong, Thailand"
+                            data-th="18 - 20 มีนาคม 2568 | ระยอง, ประเทศไทย">March 18 - 20, 2025 | Rayong,
+                            Thailand</span></p>
 
                     <div class="collapse" id="collapseNewsHackathon">
                         <div class="news-content text-secondary pt-3">
-                            <p class="opacity-75">
+                            <p class="opacity-75 lang"
+                                data-en="Our AI and Electrical Engineering (EE) students headed to Rayong for a 3-day intensive camp. The journey combined high-level industrial site visits with a high-pressure 'Code & Create' Hackathon focused on environmental sustainability."
+                                data-th="นักเรียน AI และวิศวกรรมไฟฟ้า (EE) ของเราได้เดินทางไปยังระยองเพื่อเข้าค่ายเข้มข้น 3 วัน การเดินทางนี้รวมการเยี่ยมชมสถานที่อุตสาหกรรมระดับสูงกับ Hackathon 'เขียนโค้ด & สร้างสรรค์' ที่มุ่งเน้นความยั่งยืนทางสิ่งแวดล้อม.">
                                 Our AI and Electrical Engineering (EE) students headed to Rayong for a 3-day intensive
                                 camp. The journey combined high-level industrial site visits with a high-pressure "Code
-                                & Create" Hackathon focused on environmental sustainability.
-                            </p>
+                                & Create" Hackathon focused on environmental sustainability.</p>
 
                             <div class="row mt-4">
                                 <div class="col-md-6 mb-4">
-                                    <h5 class="text-white h6"><i class="bi bi-fuel-pump-diesel me-2 text-danger"></i>Day
-                                        1: Industrial Insight</h5>
-                                    <p class="small opacity-75">Students visited the <strong>PTT LNG Company
-                                            Limited</strong> and the Miracle of Natural flora exhibition. They explored
-                                        energy-saving building designs, toured the Central Control Room, and observed
-                                        the LNG production plant, gaining firsthand chemical engineering perspective.
-                                    </p>
+                                    <h5 class="text-white h6"><i
+                                            class="bi bi-fuel-pump-diesel me-2 text-danger"></i><span class="lang"
+                                            data-en="Day 1: Industrial Insight"
+                                            data-th="วันแรก: การมองลึกในอุตสาหกรรม">Day 1: Industrial Insight</span>
+                                    </h5>
+                                    <p class="small opacity-75 lang"
+                                        data-en="Students visited the PTT LNG Company Limited and the Miracle of Natural flora exhibition. They explored energy-saving building designs, toured the Central Control Room, and observed the LNG production plant, gaining firsthand chemical engineering perspective."
+                                        data-th="นักเรียนได้เยี่ยมชมบริษัท PTT LNG จำกัด และนิทรรศการ Miracle of Natural Flora พวกเขาได้สำรวจการออกแบบอาคารประหยัดพลังงาน เยี่ยมชมห้องควบคุมกลาง และสังเกตโรงงานผลิต LNG เพื่อรับมุมมองทางวิศวกรรมเคมีแบบตรงไปตรงมา.">
+                                        Students visited the <strong>PTT LNG Company Limited</strong> and the Miracle of
+                                        Natural flora exhibition. They explored energy-saving building designs, toured
+                                        the Central Control Room, and observed the LNG production plant, gaining
+                                        firsthand chemical engineering perspective.</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <h5 class="text-white h6"><i class="bi bi-cpu-fill me-2 text-danger"></i>Day 2-3:
-                                        The Hackathon</h5>
-                                    <p class="small opacity-75">Under limited time and resources, teams designed an
-                                        <strong>AI-Powered Smart Waste Sorter</strong>. Using embedded systems and
-                                        computer vision, the machines were built to classify waste into three
-                                        categories: General, Hazardous, and Recyclable.
-                                    </p>
+                                    <h5 class="text-white h6"><i class="bi bi-cpu-fill me-2 text-danger"></i><span
+                                            class="lang" data-en="Day 2-3: The Hackathon"
+                                            data-th="วัน 2-3: Hackathon">Day 2-3: The Hackathon</span></h5>
+                                    <p class="small opacity-75 lang"
+                                        data-en="Under limited time and resources, teams designed an AI-Powered Smart Waste Sorter. Using embedded systems and computer vision, the machines were built to classify waste into three categories: General, Hazardous, and Recyclable."
+                                        data-th="ภายใต้เวลาที่จำกัดและทรัพยากร ทีมได้ออกแบบเครื่องคัดแยกขยะอัจฉริยะที่ขับเคลื่อนด้วย AI โดยใช้ระบบฝังตัวและการมองเห็นด้วยคอมพิวเตอร์ เครื่องจักรได้รับการสร้างขึ้นเพื่อจัดประเภทขยะออกเป็นสามประเภท: ทั่วไป, อันตราย และรีไซเคิล.">
+                                        Under limited time and resources, teams designed an <strong>AI-Powered Smart
+                                            Waste Sorter</strong>. Using embedded systems and computer vision, the
+                                        machines were built to classify waste into three categories: General, Hazardous,
+                                        and Recyclable.</p>
                                 </div>
                             </div>
 
-
-
                             <div class="mt-4 p-3 border-start border-danger bg-dark mb-4">
-                                <p class="mb-0 small text-white italic">
+                                <p class="mb-0 small text-white italic lang"
+                                    data-en='"This camp bridged the gap between raw industrial engineering and the application of AI for social responsibility."'
+                                    data-th='"ค่ายนี้ช่วยเชื่อมช่องว่างระหว่างวิศวกรรมอุตสาหกรรมขั้นพื้นฐานและการประยุกต์ใช้ AI เพื่อความรับผิดชอบทางสังคม."'>
                                     "This camp bridged the gap between raw industrial engineering and the application of
-                                    AI for social responsibility."
-                                </p>
+                                    AI for social responsibility."</p>
                             </div>
 
                             <div class="news-bottom-focus2 mt-5">
@@ -441,58 +560,79 @@
                     </div>
 
                     <div class="mt-4">
-                        <span class="news-tag-pill">Hackathon</span>
-                        <span class="news-tag-pill">Field Trip</span>
-                        <span class="news-tag-pill">M.4</span>
-                        <span class="news-tag-pill">M.5</span>
+                        <span class="news-tag-pill lang" data-en="Hackathon" data-th="Hackathon">Hackathon</span>
+                        <span class="news-tag-pill lang" data-en="Field Trip" data-th="การเดินทางเพื่อการศึกษา">Field
+                            Trip</span>
+                        <span class="news-tag-pill lang" data-en="M.4" data-th="ม.4">M.4</span>
+                        <span class="news-tag-pill lang" data-en="M.5" data-th="ม.5">M.5</span>
                     </div>
                 </article>
+
                 <article class="news-list-item mb-5 pb-5 border-bottom border-dark" id="Portfolio">
                     <h2 class="h3 mb-2">
                         <a href="#collapseNewsTCAS"
                             class="text-white text-decoration-none hover-red d-flex justify-content-between align-items-center"
                             data-bs-toggle="collapse" role="button" aria-expanded="false"
                             aria-controls="collapseNewsTCAS">
-                            Road to TCAS Year 2
+                            <span class="lang" data-en="Road to TCAS Year 2" data-th="เส้นทางสู่ TCAS ปี 2">Road to TCAS
+                                Year 2</span>
                             <i class="bi bi-chevron-down small opacity-50"></i>
                         </a>
                     </h2>
-                    <p class="text-secondary small mb-3">February 21, 2025 | SATIT PSM</p>
+                    <p class="text-secondary small mb-3"><span class="lang" data-en="February 21, 2025 | SATIT PSM"
+                            data-th="21 กุมภาพันธ์ 2568 | SATIT PSM">February 21, 2025 | SATIT PSM</span></p>
 
                     <div class="collapse" id="collapseNewsTCAS">
                         <div class="news-content text-secondary opacity-75 pt-3">
                             <p>
-                                An inspiring afternoon dedicated to the future of our AI students. The <strong>"Road to
-                                    TCAS Year 2"</strong> seminar provided a comprehensive roadmap for students aiming
-                                for top-tier engineering and technology faculties in Thailand.
+                                <span class="lang"
+                                    data-en="An inspiring afternoon dedicated to the future of our AI students."
+                                    data-th="บ่ายวันหนึ่งที่สร้างแรงบันดาลใจที่มอบให้กับอนาคตของนักเรียน AI ของเรา.">An
+                                    inspiring afternoon dedicated to the future of our AI students.</span>
+                                <span class="lang"
+                                    data-en="The 'Road to TCAS Year 2' seminar provided a comprehensive roadmap for students aiming for top-tier engineering and technology faculties in Thailand."
+                                    data-th="สัมมนา 'เส้นทางสู่ TCAS ปี 2' มอบแผนที่ที่ครอบคลุมสำหรับนักเรียนที่หวังจะเข้าศึกษาต่อในคณะวิศวกรรมศาสตร์และเทคโนโลยีที่ดีที่สุดในประเทศไทย.">The
+                                    <strong>"Road to TCAS Year 2"</strong> seminar provided a comprehensive roadmap for
+                                    students aiming for top-tier engineering and technology faculties in
+                                    Thailand.</span>
                             </p>
 
                             <div class="row mt-4">
                                 <div class="col-md-6 mb-4">
                                     <h5 class="text-white h6"><i
-                                            class="bi bi-mortarboard-fill me-2 text-danger"></i>Expert Guidance</h5>
-                                    <p class="small">We were honored to host <strong>Assoc. Prof. Theerawat
-                                            Prakobphon</strong> from KMITL, who shared invaluable techniques, technical
-                                        knowledge, and inspiration for university entrance.</p>
+                                            class="bi bi-mortarboard-fill me-2 text-danger"></i><span class="lang"
+                                            data-en="Expert Guidance" data-th="คำแนะนำจากผู้เชี่ยวชาญ">Expert
+                                            Guidance</span></h5>
+                                    <p class="small lang"
+                                        data-en="We were honored to host Assoc. Prof. Theerawat Prakobphon from KMITL, who shared invaluable techniques, technical knowledge, and inspiration for university entrance."
+                                        data-th="เรารู้สึกเป็นเกียรติที่ได้ต้อนรับ รศ.ธีระวัฒน์ ประกอบพล จาก KMITL ผู้ซึ่งได้แบ่งปันเทคนิค ความรู้ทางเทคนิค และแรงบันดาลใจในการเข้าศึกษาต่อในมหาวิทยาลัย.">
+                                        We were honored to host <strong>Assoc. Prof. Theerawat Prakobphon</strong> from
+                                        KMITL, who shared invaluable techniques, technical knowledge, and inspiration
+                                        for university entrance.</p>
                                 </div>
                                 <div class="col-md-6 mb-4">
-                                    <h5 class="text-white h6"><i
-                                            class="bi bi-lightbulb-fill me-2 text-danger"></i>Project & Presentation
-                                    </h5>
-                                    <p class="small">Special thanks to <strong>Team "Kao-Kee"</strong> and <strong>Team
-                                            "Dr. Fish"</strong> for sharing their secrets on creative project
-                                        development, professional presentation techniques, and problem-solving
-                                        strategies.</p>
+                                    <h5 class="text-white h6"><i class="bi bi-lightbulb-fill me-2 text-danger"></i><span
+                                            class="lang" data-en="Project & Presentation"
+                                            data-th="โครงการและการนำเสนอ">Project & Presentation</span></h5>
+                                    <p class="small lang"
+                                        data-en="Special thanks to Team 'Kao-Kee' and Team 'Dr. Fish' for sharing their secrets on creative project development, professional presentation techniques, and problem-solving strategies."
+                                        data-th="ขอขอบคุณเป็นพิเศษต่อทีม 'Kao-Kee' และทีม 'Dr. Fish' ที่ได้แบ่งปันเคล็ดลับในการพัฒนาโครงการสร้างสรรค์ เทคนิคการนำเสนออย่างมืออาชีพ และกลยุทธ์การแก้ปัญหา.">
+                                        Special thanks to <strong>Team "Kao-Kee"</strong> and <strong>Team "Dr.
+                                            Fish"</strong> for sharing their secrets on creative project development,
+                                        professional presentation techniques, and problem-solving strategies.</p>
                                 </div>
                             </div>
 
                             <div class="mt-4 p-3 border-start border-danger bg-dark mb-4">
-                                <h6 class="text-white small mb-2">Alumni Connection (Generations 1-3):</h6>
-                                <p class="small mb-0 italic">
+                                <h6 class="text-white small mb-2 lang" data-en="Alumni Connection (Generations 1-3):"
+                                    data-th="การเชื่อมต่อศิษย์เก่า (รุ่นที่ 1-3):">Alumni Connection (Generations 1-3):
+                                </h6>
+                                <p class="small mb-0 italic lang"
+                                    data-en="Our seniors from the first three generations of E-AI returned to share their university life experiences with Gen 6. This 'Senior-to-Junior' bridge is what makes our community strong."
+                                    data-th="รุ่นพี่จากรุ่นแรกถึงสามของ E-AI ได้กลับมาที่นี่เพื่อแบ่งปันประสบการณ์ชีวิตในมหาวิทยาลัยกับรุ่น 6 ความเชื่อมโยง 'รุ่นพี่-รุ่นน้อง' นี้ทำให้ชุมชนของเราแข็งแกร่ง.">
                                     Our seniors from the first three generations of E-AI returned to share their
                                     university life experiences with Gen 6. This "Senior-to-Junior" bridge is what makes
-                                    our community strong.
-                                </p>
+                                    our community strong.</p>
                             </div>
 
                             <div class="news-bottom-focus2 mt-5">
@@ -503,10 +643,10 @@
                     </div>
 
                     <div class="mt-4">
-                        <span class="news-tag-pill">TCAS</span>
-                        <span class="news-tag-pill">Alumni</span>
-                        <span class="news-tag-pill">Portfolio</span>
-                        <span class="news-tag-pill">KMITL</span>
+                        <span class="news-tag-pill lang" data-en="TCAS" data-th="TCAS">TCAS</span>
+                        <span class="news-tag-pill lang" data-en="Alumni" data-th="ศิษย์เก่า">Alumni</span>
+                        <span class="news-tag-pill lang" data-en="Portfolio" data-th="ผลงาน">Portfolio</span>
+                        <span class="news-tag-pill lang" data-en="KMITL" data-th="KMITL">KMITL</span>
                     </div>
                 </article>
 
@@ -516,47 +656,71 @@
                             class="text-white text-decoration-none hover-red d-flex justify-content-between align-items-center"
                             data-bs-toggle="collapse" role="button" aria-expanded="false"
                             aria-controls="collapseNewsOpenHouse">
-                            Open House SPSM 2025 "Galaxy Explorer"
+                            <span class="lang" data-en='Open House SPSM 2025 "Galaxy Explorer"'
+                                data-th='Open House SPSM 2025 "Galaxy Explorer"'>Open House SPSM 2025 "Galaxy
+                                Explorer"</span>
                             <i class="bi bi-chevron-down small opacity-50"></i>
                         </a>
                     </h2>
-                    <p class="text-secondary small mb-3">January 19, 2025 | Satit Prasarnmit Demonstration School</p>
+                    <p class="text-secondary small mb-3"><span class="lang" data-en="January 19, 2025 | SATIT PSM"
+                            data-th="19 มกราคม 2568 | SATIT PSM">January 19, 2025 | SATIT PSM</span></p>
 
                     <div class="collapse" id="collapseNewsOpenHouse">
                         <div class="news-content text-secondary opacity-75 pt-3">
                             <p>
-                                A massive thank you to all parents and students who visited the E-AI Major during the
-                                <strong>Open House 2025: Galaxy Explorer</strong>.
-                                Our students from every generation worked together to showcase the incredible potential
-                                of Artificial Intelligence and Engineering through three main highlights:
+                                <span class="lang"
+                                    data-en="A massive thank you to all parents and students who visited the E-AI Major during the Open House 2025: Galaxy Explorer."
+                                    data-th="ขอขอบคุณอย่างมากต่อผู้ปกครองและนักเรียนทุกคนที่มาเยี่ยมชมสาขา E-AI ในงาน Open House 2025: Galaxy Explorer.">A
+                                    massive thank you to all parents and students who visited the E-AI Major during the
+                                    <strong>Open House 2025: Galaxy Explorer</strong>.</span>
+                                <span class="lang"
+                                    data-en="Our students from every generation worked together to showcase the incredible potential of Artificial Intelligence and Engineering through three main highlights:"
+                                    data-th="นักเรียนจากทุกชั้นเรียนได้ทำงานร่วมกันเพื่อแสดงศักยภาพที่น่าทึ่งของปัญญาประดิษฐ์และวิศวกรรมผ่านไฮไลท์หลักสามประการ:">Our
+                                    students from every generation worked together to showcase the incredible potential
+                                    of Artificial Intelligence and Engineering through three main highlights:</span>
                             </p>
 
                             <div class="row mt-4">
                                 <div class="col-md-4 mb-4">
                                     <h5 class="text-white h6"><i
-                                            class="bi bi-info-circle-fill me-2 text-danger"></i>Major Exhibit</h5>
-                                    <p class="small">An in-depth look at our curriculum, student life, and the career
-                                        paths available to E-AI graduates.</p>
+                                            class="bi bi-info-circle-fill me-2 text-danger"></i><span class="lang"
+                                            data-en="Major Exhibit" data-th="นิทรรศการหลัก">Major Exhibit</span></h5>
+                                    <p class="small lang"
+                                        data-en="An in-depth look at our curriculum, student life, and the career paths available to E-AI graduates."
+                                        data-th="การมองลึกเกี่ยวกับหลักสูตร ชีวิตนักเรียน และเส้นทางอาชีพที่มีให้กับบัณฑิต E-AI.">
+                                        An in-depth look at our curriculum, student life, and the career paths available
+                                        to E-AI graduates.</p>
                                 </div>
                                 <div class="col-md-4 mb-4">
                                     <h5 class="text-white h6"><i
-                                            class="bi bi-file-earmark-lock-fill me-2 text-danger"></i>Murderer Files
-                                    </h5>
-                                    <p class="small">"The Mission Begins"—an interactive activity base where visitors
-                                        solved puzzles using logic and technology.</p>
+                                            class="bi bi-file-earmark-lock-fill me-2 text-danger"></i><span class="lang"
+                                            data-en="Murderer Files" data-th="Murderer Files">Murderer Files</span></h5>
+                                    <p class="small lang"
+                                        data-en='"The Mission Begins"—an interactive activity base where visitors solved puzzles using logic and technology.'
+                                        data-th='"ภารกิจเริ่มต้น"—กิจกรรมเชิงโต้ตอบที่ผู้เข้าชมสามารถแก้ปัญหาด้วยการใช้ตรรกะและเทคโนโลยี.'>
+                                        "The Mission Begins"—an interactive activity base where visitors solved puzzles
+                                        using logic and technology.</p>
                                 </div>
                                 <div class="col-md-4 mb-4">
-                                    <h5 class="text-white h6"><i class="bi bi-terminal-fill me-2 text-danger"></i>Python
-                                        Battle</h5>
-                                    <p class="small">The <strong>Prasarnmit Python Battle 2025</strong>, where young
-                                        coders showcased their algorithms under pressure.</p>
+                                    <h5 class="text-white h6"><i class="bi bi-terminal-fill me-2 text-danger"></i><span
+                                            class="lang" data-en="Python Battle" data-th="การแข่งขัน Python">Python
+                                            Battle</span></h5>
+                                    <p class="small lang"
+                                        data-en="The Prasarnmit Python Battle 2025, where young coders showcased their algorithms under pressure."
+                                        data-th="การต่อสู้ Python Prasarnmit 2025 ที่นักเขียนโค้ดเยาวชนแสดงอัลกอริธึมของพวกเขาในสภาวะกดดัน.">
+                                        The <strong>Prasarnmit Python Battle 2025</strong>, where young coders showcased
+                                        their algorithms under pressure.</p>
                                 </div>
                             </div>
 
                             <div class="mt-4 p-4 border-1 border-secondary bg-dark text-center rounded">
-                                <h5 class="text-white mb-2">Want to be part of the next Galaxy?</h5>
-                                <p class="small mb-0">Join our family and explore the frontiers of technology with us.
-                                </p>
+                                <h5 class="text-white mb-2 lang" data-en="Want to be part of the next Galaxy?"
+                                    data-th="อยากเป็นส่วนหนึ่งของกาแล็กซี่ถัดไป?">Want to be part of the next Galaxy?
+                                </h5>
+                                <p class="small mb-0 lang"
+                                    data-en="Join our family and explore the frontiers of technology with us."
+                                    data-th="เข้าร่วมครอบครัวของเราและสำรวจแนวหน้าของเทคโนโลยีกับเรา.">Join our family
+                                    and explore the frontiers of technology with us.</p>
                             </div>
 
                             <div class="news-bottom-focus2 mt-5">
@@ -567,10 +731,11 @@
                     </div>
 
                     <div class="mt-4">
-                        <span class="news-tag-pill">Open House</span>
-                        <span class="news-tag-pill">Competition</span>
-                        <span class="news-tag-pill">Python Battle</span>
-                        <span class="news-tag-pill">Activity</span>
+                        <span class="news-tag-pill lang" data-en="Open House" data-th="Open House">Open House</span>
+                        <span class="news-tag-pill lang" data-en="Competition" data-th="การแข่งขัน">Competition</span>
+                        <span class="news-tag-pill lang" data-en="Python Battle" data-th="การแข่งขัน Python">Python
+                            Battle</span>
+                        <span class="news-tag-pill lang" data-en="Activity" data-th="กิจกรรม">Activity</span>
                     </div>
                 </article>
 
@@ -591,12 +756,15 @@
             </aside>
         </div>
     </main>
+
     <footer class="main-footer">
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-4">
                     <a class="footer-logo" href="#">E-AI Major <span>Satit Prasarnmit</span></a>
-                    <p class="mt-3 footer-text">
+                    <p class="mt-3 footer-text lang"
+                        data-en="Empowering the next generation of AI innovators through hands-on robotics, data science, and engineering excellence."
+                        data-th="ส่งเสริมคนรุ่นใหม่สู่การเป็นนวัตกรด้าน AI ผ่านการเรียนรู้หุ่นยนต์ วิทยาการข้อมูล และความเป็นเลิศด้านวิศวกรรม">
                         Empowering the next generation of AI innovators through hands-on robotics,
                         data science, and engineering excellence.
                     </p>
@@ -607,7 +775,7 @@
                             href="https://line.me/ti/g2/ndaO79KTfMgATFzG51IhHQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"><i
                                 class="bi bi-line"></i></a>
                         <a href="https://www.tiktok.com/@e.ai_official?_t=zs-8t3rzkjxgyw&_r=1"><i
-                                class="bi bi-tiktok"></i></a>
+                                class="bi bi-tiktok"></i> </a>
                         <a
                             href="https://sites.google.com/view/eai-official/%E0%B9%80%E0%B8%81%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%9A%E0%B8%A7%E0%B8%8A%E0%B8%B2%E0%B9%80%E0%B8%AD%E0%B8%81"><i
                                 class="bi bi-globe"></i></a>
@@ -615,20 +783,25 @@
                 </div>
 
                 <div class="col-lg-2 col-md-4 ms-lg-auto">
-                    <h5 class="footer-heading">Navigate</h5>
+                    <h5 class="footer-heading lang" data-en="Navigate" data-th="เมนู">Navigate</h5>
                     <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="curriculum.html">About E-AI</a></li>
-                        <li><a href="alumni.html">Alumni</a></li>
-                        <li><a href="#">Achievements</a></li>
+                        <li><a href="index.html" class="lang" data-en="Home" data-th="หน้าหลัก">Home</a></li>
+                        <li><a href="curriculum.html" class="lang" data-en="About E-AI" data-th="เกี่ยวกับเรา">About
+                                E-AI</a></li>
+                        <li><a href="alumni.html" class="lang" data-en="Alumni" data-th="ศิษย์เก่า">Alumni</a></li>
+                        <li><a href="#hall-of-fame" class="lang" data-en="Achievements" data-th="ผลงาน">Achievements</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4">
-                    <h5 class="footer-heading">SPSM Official Contacts</h5>
+                    <h5 class="footer-heading lang" data-en="SPSM Official Contacts" data-th="การติดต่ออย่างเป็นทางการ">
+                        SPSM Official Contacts</h5>
                     <ul class="footer-contact">
-                        <li><i class="bi bi-geo-alt-fill"></i> Srinakharinwirot University Prasarnmit Demonstration
-                            School (Secondary)</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> <span class="lang"
+                                data-en="Srinakharinwirot University Prasarnmit Demonstration School (Secondary)"
+                                data-th="โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร (ฝ่ายมัธยม)">Srinakharinwirot
+                                University Prasarnmit Demonstration School (Secondary)</span></li>
                         <li><i class="bi bi-envelope-fill"></i> satitpsm.secondary@gmail.com</li>
                         <li><i class="bi bi-telephone-fill"></i> 02-260-9986</li>
                     </ul>
@@ -638,16 +811,19 @@
             <hr class="footer-divider">
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Artificial Intelligence Major Satit Prasarnmit. All rights reserved.</p>
+                <p class="lang"
+                    data-en="&copy; 2026 Artificial Intelligence Major Satit Prasarnmit. All rights reserved."
+                    data-th="&copy; 2026 วิชาเอกปัญญาประดิษฐ์ สาธิตประสานมิตร. สงวนลิขสิทธิ์ทั้งหมด.">&copy; 2026
+                    Artificial Intelligence Major Satit Prasarnmit. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
+                    <a href="#" class="lang" data-en="Privacy Policy" data-th="นโยบายความเป็นส่วนตัว">Privacy Policy</a>
+                    <a href="#" class="lang" data-en="Terms of Use" data-th="ข้อกำหนดการใช้งาน">Terms of Use</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
-
