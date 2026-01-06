@@ -23,15 +23,19 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto nav-links align-items-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="curriculum.html">About E-AI</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="alumni.html">Alumni</a></li>
-                    <li class="nav-item"><a class="nav-link text-white"
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Home" data-th="หน้าหลัก"
+                            href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="About E-AI"
+                            data-th="เกี่ยวกับ E-AI" href="curriculum.html">About E-AI</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="News" data-th="ข่าวสาร"
+                            href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Alumni" data-th="ศิษย์เก่า"
+                            href="alumni.html">Alumni</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Contact" data-th="ติดต่อ"
                             href="https://linktr.ee/eaisatitpsm?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnwaCsmcwnSQnG0TkPJGgGh_SO1jbiPYik8-NaHzqU2ClP7HTSX3JdMEcU9bY_aem_JT9tkW3ldPv0pfjRWFzu8w">Contact</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <button class="cta-btn">Join Us</button>
+                        <button id="lang-switch" class="btn btn-outline-light btn-sm">TH / EN</button>
                     </li>
                 </ul>
             </div>
@@ -41,26 +45,39 @@
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Join our E-AI major family</h1>
-            <p>Congrats to E-AI 08, See you in June 2026.</p>
+            <h1 class="lang" data-en="Welcome to E-AI" data-th="ยินดีต้อนรับสู่ E-AI">Welcome to E-AI</h1>
+            <p class="lang" data-en="Congrats to E-AI 08, See you in June 2026."
+                data-th="ขอแสดงความยินดีกับ E-AI รุ่น 08 แล้วมาเจอกันในเดือนมิถุนายน 2569">Congrats to E-AI 08,
+                See you in June 2026.</p>
             <br>
-            <button class="btn">Apply Now</button>
+            <a class="btn lang" data-en="Join our Line Open Chat" data-th="เข้าร่วม Line Open Chat ของเอก"
+                href="https://line.me/ti/g2/ndaO79KTfMgATFzG51IhHQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default">
+                Join our Line Open Chat
+            </a>
         </div>
     </header>
 
-    <section id="academics" class="academic-journey py-5">
+    <section id=" academics" class="academic-journey py-5">
         <div class="container">
-            <h2 class="features-title">E-AI's Curriculum Overview</h2>
+            <h2 class="features-title lang" data-en="Curriculum Overview" data-th="ภาพรวมหลักสูตร">Curriculum Overview
+            </h2>
 
             <div class="roadmap">
                 <div class="roadmap-item">
                     <div class="roadmap-dot">01</div>
                     <div class="roadmap-content">
                         <div class="card">
-                            <h3><i class="bi bi-cpu me-2"></i>The Foundation Stage</h3>
-                            <p>This stage builds essential skills in computer engineering, programming, and 2D/3D
-                                design. Students apply math and science concepts through hands-on robotics projects
-                                while learning core AI principles. Includes a <strong>"Physics in Robotics"</strong>
+                            <h3><i class="bi bi-cpu me-2"></i><span class="lang" data-en="The Foundation Stage"
+                                    data-th="ระดับพื้นฐาน">The Foundation Stage</span></h3>
+                            <p class="lang"
+                                data-en="This stage builds essential skills in computer engineering, programming, and 2D/3D design. Students apply math and science concepts through hands-on robotics projects while learning core AI principles. Includes a 'Physics in Robotics' course certified by FIBO, KMUTT."
+                                data-th="ระดับนี้เน้นสร้างทักษะพื้นฐานด้านวิศวกรรมคอมพิวเตอร์ การเขียนโปรแกรม และการออกแบบ 2D/3D นักเรียนจะได้ประยุกต์ใช้คณิตศาสตร์และวิทยาศาสตร์ผ่านโครงงานหุ่นยนต์ พร้อมเรียนรู้หลักการ AI เบื้องต้น รวมถึงวิชา 'Physics in Robotics' ที่ได้รับการรับรองโดย FIBO, KMUTT">
+                                This stage builds essential skills in computer engineering, programming, and
+                                2D/3D
+                                design. Students apply math and science concepts through hands-on robotics
+                                projects
+                                while learning core AI principles. Includes a <strong>"Physics in
+                                    Robotics"</strong>
                                 course certified by <strong>FIBO, KMUTT</strong>.</p>
                         </div>
                     </div>
@@ -70,8 +87,13 @@
                     <div class="roadmap-dot">02</div>
                     <div class="roadmap-content">
                         <div class="card">
-                            <h3><i class="bi bi-code-square me-2"></i>Implementation Stage</h3>
-                            <p>Focusing on active learning, students conduct research and write AI programs. They
+                            <h3><i class="bi bi-code-square me-2"></i><span class="lang" data-en="Implementation Stage"
+                                    data-th="ระดับการลงมือทำ">Implementation Stage</span></h3>
+                            <p class="lang"
+                                data-en="Focusing on active learning, students conduct research and write AI programs. They integrate these programs with microcontrollers and specialized AI tools, gaining real-world experience by creating and presenting original projects through their coursework."
+                                data-th="เน้นการเรียนรู้เชิงรุก (Active Learning) นักเรียนจะได้วิจัยและเขียนโปรแกรม AI โดยบูรณาการเข้ากับไมโครคอนโทรลเลอร์และเครื่องมือ AI เฉพาะทาง เพื่อสร้างสรรค์และนำเสนอโครงงานจริงผ่านการเรียนการสอน">
+                                Focusing on active learning, students conduct research and write AI programs.
+                                They
                                 integrate these programs with microcontrollers and specialized AI tools, gaining
                                 real-world experience by creating and presenting original projects through their
                                 coursework.</p>
@@ -83,9 +105,15 @@
                     <div class="roadmap-dot">03</div>
                     <div class="roadmap-content">
                         <div class="card">
-                            <h3><i class="bi bi-rocket-takeoff me-2"></i>Evaluation Stage</h3>
-                            <p>In this final phase, students develop AI prototypes tailored to solve real-world problems
-                                in medicine, agriculture, or local communities. The process concludes with project work
+                            <h3><i class="bi bi-rocket-takeoff me-2"></i><span class="lang" data-en="Evaluation Stage"
+                                    data-th="ระดับการประเมินผล">Evaluation Stage</span></h3>
+                            <p class="lang"
+                                data-en="In this final phase, students develop AI prototypes tailored to solve real-world problems in medicine, agriculture, or local communities. The process concludes with project work and knowledge sharing presented in both Thai and English."
+                                data-th="ในระยะสุดท้าย นักเรียนจะพัฒนาต้นแบบ AI เพื่อแก้ปัญหาจริงในด้านการแพทย์ การเกษตร หรือชุมชน โดยสรุปผลด้วยการทำโครงงานและการแลกเปลี่ยนเรียนรู้ทั้งในรูปแบบภาษาไทยและภาษาอังกฤษ">
+                                In this final phase, students develop AI prototypes tailored to solve real-world
+                                problems
+                                in medicine, agriculture, or local communities. The process concludes with
+                                project work
                                 and knowledge sharing presented in both Thai and English.</p>
                         </div>
                     </div>
@@ -96,23 +124,26 @@
 
     <section id="hall-of-fame" class="hall-of-fame">
         <div class="container">
-            <h2 class="section-title">Success & Competitions</h2>
+            <h2 class="section-title lang" data-en="Success & Competitions" data-th="ความสำเร็จและการแข่งขัน">Success &
+                Competitions</h2>
             <br><br>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="award-card">
                         <div class="award-img-container">
-                            <img src="pic/year.jpg" 
-                                alt="Student Project" class="award-img">
+                            <img src="pic/year.jpg" alt="Student Project" class="award-img">
 
                         </div>
                         <div class="award-content">
                             <h4 class="student-name">นายณัฐพัชร์ เอมสีแดง</h4>
                             <p class="student-grade">M.5, E-AI Major</p>
-                            <div class="award-tag pink-tag">
+                            <div class="award-tag pink-tag lang" data-en="Popular Vote Award"
+                                data-th="รางวัล Popular Vote">
                                 <i class="bi bi-trophy-fill"></i> Popular Vote Award
                             </div>
-                            <p class="award-desc">
+                            <p class="award-desc lang"
+                                data-en="AI Builders project by 25Degree, sponsored by AWS. Developed a 'Fake Review Classification' model to improve e-commerce reliability."
+                                data-th="โครงการ AI Builders โดย 25Degree สนับสนุนโดย AWS พัฒนาโมเดล 'แยกแยะรีวิวปลอม' เพื่อเพิ่มความน่าเชื่อถือให้ธุรกิจอีคอมเมิร์ซ">
                                 AI Builders project by 25Degree, sponsored by AWS. Developed a "Fake Review
                                 Classification" model to improve e-commerce reliability.
                             </p>
@@ -123,17 +154,20 @@
                 <div class="col-md-4">
                     <div class="award-card">
                         <div class="award-img-container">
-                            <img src="pic/wawa.jpg"
-                                alt="Student Project" class="award-img">
+                            <img src="pic/wawa.jpg" alt="Student Project" class="award-img">
                         </div>
                         <div class="award-content">
                             <h4 class="student-name">นางสาวชลนา เครือวุฒิกุล</h4>
                             <p class="student-grade">M.5, E-AI Major</p>
-                            <div class="award-tag pink-tag">
+                            <div class="award-tag pink-tag lang" data-en="Selected Finalist"
+                                data-th="ผู้เข้ารอบสุดท้าย">
                                 <i class="bi bi-check-circle-fill"></i> Selected Finalist
                             </div>
-                            <p class="award-desc">
-                                Selected to present poster at AI Builders 2024. Research focused on advanced programming
+                            <p class="award-desc lang"
+                                data-en="Selected to present poster at AI Builders 2024. Research focused on advanced programming logic and AI deployment."
+                                data-th="ได้รับคัดเลือกให้นำเสนอผลงานในรูปแบบโปสเตอร์ที่งาน AI Builders 2024 โดยเน้นวิจัยด้านตรรกะการเขียนโปรแกรมขั้นสูงและการใช้งาน AI">
+                                Selected to present poster at AI Builders 2024. Research focused on advanced
+                                programming
                                 logic and AI deployment.
                             </p>
                         </div>
@@ -143,79 +177,93 @@
                 <div class="col-md-4">
                     <div class="award-card">
                         <div class="award-img-container">
-                            <img src="pic/leeling.jpg"
-                                alt="Student Project" class="award-img">
+                            <img src="pic/leeling.jpg" alt="Student Project" class="award-img">
                         </div>
                         <div class="award-content">
-                            <h4 class="student-name">นางสาวอธิตานันท์ ธนโชคจินดาวัฒน์<br>นายอติวัชญ์ หวังชิงชัย </h4>
+                            <h4 class="student-name">นางสาวอธิตานันท์ ธนโชคจินดาวัฒน์<br>นายอติวัชญ์
+                                หวังชิงชัย </h4>
                             <p class="student-grade">M.4, E-AI & ME Major</p>
-                            <div class="award-tag green-tag">
+                            <div class="award-tag green-tag lang" data-en="10,000 THB Grant"
+                                data-th="ทุนสนับสนุน 10,000 บาท">
                                 <i class="bi bi-coin"></i> 10,000 THB Grant
                             </div>
-                            <p class="award-desc">
-                                NSC 2024 Winners for "Duang Jai" app: An AI Voice-to-Text application designed to
+                            <p class="award-desc lang"
+                                data-en="NSC 2024 Winners for 'Duang Jai' app: An AI Voice-to-Text application designed to improve the quality of life for the elderly."
+                                data-th="ผู้ชนะรางวัล NSC 2024 จากแอปพลิเคชัน 'ดวงใจ': แอป AI แปลงเสียงเป็นข้อความที่ออกแบบมาเพื่อพัฒนาคุณภาพชีวิตของผู้สูงอายุ">
+                                NSC 2024 Winners for "Duang Jai" app: An AI Voice-to-Text application
+                                designed to
                                 improve the quality of life for the elderly.
                             </p>
                         </div>
                     </div>
                 </div>
-                
-               
-                <div class="col-md-4">
-                        <div class="award-card dark-theme">
+                <div class="row g-4 mt-4">
+                    <div class="col-md-4">
+                        <div class="award-card achievement-card dark-theme">
                             <div class="award-img-container">
-                                <img src="pic/builder.jpg"
-                                    alt="AI Builders" class="award-img">
+                                <img src="pic/builder.jpg" alt="AI Builders" class="award-img">
                             </div>
                             <div class="award-content">
-                                <h4 class="student-name">นางสาวชลนา เครือวุฒิกุล<br>นายณัฐพัชร์ เอมสีแดง</h4>
+                                <h4 class="student-name">นางสาวชลนา เครือวุฒิกุล<br>นายณัฐพัชร์ เอมสีแดง
+                                </h4>
                                 <p class="student-grade">M.5 & M.4, E-AI Major</p>
-                                <div class="award-tag orange-tag">
+                                <div class="award-tag orange-tag lang" data-en="AI BUILDERS Selected"
+                                    data-th="ได้รับคัดเลือกเข้า AI BUILDERS">
                                     <i class="bi bi-rocket-takeoff-fill"></i> AI BUILDERS Selected
                                 </div>
-                                <p class="award-desc">
-                                    Passed the selection for the AI Builders project to develop real-world applications
+                                <p class="award-desc lang"
+                                    data-en="Passed the selection for the AI Builders project to develop real-world applications using Data Science and Artificial Intelligence techniques."
+                                    data-th="ผ่านการคัดเลือกเข้าร่วมโครงการ AI Builders เพื่อพัฒนาแอปพลิเคชันที่ใช้งานได้จริงโดยใช้เทคนิควิทยาการข้อมูลและปัญญาประดิษฐ์">
+                                    Passed the selection for the AI Builders project to develop real-world
+                                    applications
                                     using Data Science and Artificial Intelligence techniques.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                <div class="col-md-4">
-                        <div class="award-card blue-theme">
+                    <div class="col-md-4">
+                        <div class="award-card achievement-card blue-theme">
                             <div class="award-img-container">
-                                <img src="pic/aieng.jpg"
-                                    alt="Super AI Engineer" class="award-img">
+                                <img src="pic/aieng.jpg" alt="Super AI Engineer" class="award-img">
                             </div>
                             <div class="award-content">
-                                <h4 class="student-name">นาย ฐปนวัฒน์ สุริโยโรจน์j</h4>
+                                <h4 class="student-name">นาย ฐปนวัฒน์ สุริโยโรจน์</h4>
                                 <p class="student-grade">M.5, E-AI Major</p>
-                                <div class="award-tag blue-tag">
+                                <div class="award-tag blue-tag lang" data-en="Super AI Level 2"
+                                    data-th="Super AI ระดับ 2">
                                     <i class="bi bi-cpu-fill"></i> Super AI Level 2
                                 </div>
-                                <p class="award-desc">
-                                    Qualified for Level 2 of the Super AI Engineer Season 4 program, engaging in
+                                <p class="award-desc lang"
+                                    data-en="Qualified for Level 2 of the Super AI Engineer Season 4 program, engaging in advanced theoretical and practical training from April to June 2024."
+                                    data-th="ผ่านการคัดเลือกเข้าสู่ระดับที่ 2 ของโครงการ Super AI Engineer ซีซัน 4 โดยเข้าร่วมการฝึกอบรมทั้งภาคทฤษฎีและปฏิบัติขั้นสูงในช่วงเดือนเมษายนถึงมิถุนายน 2567">
+                                    Qualified for Level 2 of the Super AI Engineer Season 4 program,
+                                    engaging in
                                     advanced theoretical and practical training from April to June 2024.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                <div class="col-md-4">
-                        <div class="award-card d red-theme">
+                    <div class="col-md-4">
+                        <div class="award-card achievement-card red-theme">
                             <div class="award-img-container">
-                                <img src="pic/stem.jpg"
-                                    alt="STEM Contest" class="award-img">
+                                <img src="pic/stem.jpg" alt="STEM Contest" class="award-img">
                             </div>
                             <div class="award-content">
-                                <h4 class="student-name">นาย ปุญญพัฒน์ จิตรนำทรัพย์<br>นาย นภัทร สุโกศล<br>นาย ตะวัน
+                                <h4 class="student-name">นาย ปุญญพัฒน์ จิตรนำทรัพย์<br>นาย นภัทร
+                                    สุโกศล<br>นาย ตะวัน
                                     บู่ทอง</h4>
                                 <p class="student-grade">M.5, E-AI Major</p>
-                                <div class="award-tag red-tag">
+                                <div class="award-tag red-tag lang" data-en="3rd Prize Winner"
+                                    data-th="รางวัลรองชนะเลิศอันดับ 2">
                                     <i class="bi bi-trophy-fill"></i> 3rd Prize Winner
                                 </div>
-                                <p class="award-desc">
-                                    Awarded 3rd Prize (1st in total score) at the Creative Minds STEM Contest #2 held at
+                                <p class="award-desc lang"
+                                    data-en="Awarded 3rd Prize (1st in total score) at the Creative Minds STEM Contest #2 held at KMUTNB on May 9-10, 2024."
+                                    data-th="ได้รับรางวัลรองชนะเลิศอันดับ 2 (ลำดับที่ 1 ของคะแนนรวม) ในการแข่งขัน Creative Minds STEM Contest ครั้งที่ 2 ณ มจพ. เมื่อวันที่ 9-10 พฤษภาคม 2567">
+                                    Awarded 3rd Prize (1st in total score) at the Creative Minds STEM
+                                    Contest #2 held at
                                     KMUTNB on May 9-10, 2024.
                                 </p>
                             </div>
@@ -227,51 +275,112 @@
 
     <section id="faq" class="faq-section py-5">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2 class="section-title lang" data-en="Frequently Asked Questions" data-th="คำถามที่พบบ่อย">Frequently Asked Questions</h2>
             <div class="accordion accordion-flush custom-accordion" id="faqAccordion">
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq1">
+                        <button class="accordion-button collapsed lang" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" 
+                                data-en="What is the E-AI Major exactly?" 
+                                data-th="วิชาเอก E-AI คืออะไร?">
                             <i class="bi bi-question-circle me-3"></i> What is the E-AI Major exactly?
                         </button>
                     </h2>
                     <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            The E-AI (Engineering & Artificial Intelligence) major is a specialized program at Satit
-                            Prasarnmit focused on Robotics, Programming, and AI Development. It combines core Physics
-                            and Math with hands-on engineering projects.
+                        <div class="accordion-body lang" 
+                             data-en="The E-AI (Engineering & Artificial Intelligence) major is a specialized program at Satit Prasarnmit focused on Robotics, Programming, and AI Development. It combines core Physics and Math with hands-on engineering projects."
+                             data-th="วิชาเอก E-AI (วิศวกรรมและปัญญาประดิษฐ์) เป็นหลักสูตรเฉพาะทางของสาธิตประสานมิตรที่เน้นด้านหุ่นยนต์ การเขียนโปรแกรม และการพัฒนา AI โดยบูรณาการวิชาฟิสิกส์และคณิตศาสตร์หลักเข้ากับโครงงานวิศวกรรมเชิงปฏิบัติ">
+                            The E-AI (Engineering & Artificial Intelligence) major is a specialized program at Satit Prasarnmit focused on Robotics, Programming, and AI Development. It combines core Physics and Math with hands-on engineering projects.
                         </div>
                     </div>
                 </div>
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq2">
-                            <i class="bi bi-award me-3"></i> Is the curriculum certified by universities?
+                        <button class="accordion-button collapsed lang" type="button" data-bs-toggle="collapse" data-bs-target="#faqStats"
+                                data-en="How many students applied last year and how many were accepted?"
+                                data-th="ปีที่แล้วมีนักเรียนสมัครกี่คน และรับเข้าเรียนกี่คน?">
+                            <i class="bi bi-people me-3"></i> How many students applied last year and how many were accepted?
                         </button>
                     </h2>
-                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            Yes! Our curriculum is developed in collaboration with leading institutions. For example,
-                            our "Physics in Robotics" course is certified by FIBO, KMUTT.
+                    <div id="faqStats" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body lang"
+                             data-en="Last year, there were 86 applicants, and 16 students were accepted into the program."
+                             data-th="ในปีที่ผ่านมา มีผู้สมัครทั้งหมด 86 คน และมีนักเรียนที่ผ่านการคัดเลือกเข้าสู่หลักสูตรจำนวน 16 คน">
+                            Last year, there were <strong>86 applicants</strong>, and <strong>16 students</strong> were accepted into the program.
                         </div>
                     </div>
                 </div>
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#faq3">
-                            <i class="bi bi-laptop me-3"></i> What skills will students gain by graduation?
+                        <button class="accordion-button collapsed lang" type="button" data-bs-toggle="collapse" data-bs-target="#faqCoding"
+                                data-en="Do I need to know how to program before applying?"
+                                data-th="จำเป็นต้องมีพื้นฐานการเขียนโปรแกรมก่อนสมัครหรือไม่?">
+                            <i class="bi bi-code-slash me-3"></i> Do I need to know how to program before applying?
                         </button>
                     </h2>
-                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div id="faqCoding" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body lang"
+                             data-en="No, it is not required. There is no practical coding exam during the admission process. Once you are enrolled, the instructors will teach you all the necessary foundations from scratch."
+                             data-th="ไม่จำเป็นครับ ในขั้นตอนการสอบเข้าจะไม่มีการสอบปฏิบัติการเขียนโปรแกรม เมื่อน้องๆ เข้าเรียนแล้ว อาจารย์จะเริ่มสอนปูพื้นฐานที่จำเป็นทั้งหมดให้ตั้งแต่ศูนย์">
+                            No, it is not required. There is no practical coding exam during the admission process. Once you are enrolled, the instructors will teach you all the necessary foundations from scratch.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed lang" type="button" data-bs-toggle="collapse" data-bs-target="#faqPortfolio"
+                                data-en="Is a portfolio required for the interview?"
+                                data-th="ต้องใช้แฟ้มสะสมผลงาน (Portfolio) ในการสอบสัมภาษณ์หรือไม่?">
+                            <i class="bi bi-journal-bookmark me-3"></i> Is a portfolio required for the interview?
+                        </button>
+                    </h2>
+                    <div id="faqPortfolio" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body lang"
+                             data-en="A portfolio is not mandatory, but it is highly recommended to have one for the interview."
+                             data-th="พอร์ตโฟลิโอไม่ได้บังคับว่าต้องมี แต่แนะนำอย่างยิ่งว่าควรเตรียมมาเพื่อใช้ประกอบการสัมภาษณ์ครับ">
+                            A portfolio is not mandatory, but it is highly recommended to have one for the interview.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed lang" type="button" data-bs-toggle="collapse" data-bs-target="#faqPortfolioContent"
+                                data-en="What should I include in my portfolio?"
+                                data-th="ในพอร์ตโฟลิโอควรใส่อะไรบ้าง?">
+                            <i class="bi bi-file-earmark-person me-3"></i> What should I include in my portfolio?
+                        </button>
+                    </h2>
+                    <div id="faqPortfolioContent" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body lang"
+                             data-en="Your portfolio should include your academic transcripts, activities you've participated in, past projects, and competition results. Projects or achievements specifically related to computers or technology will receive special consideration."
+                             data-th="ควรมีใบรายงานผลการเรียน กิจกรรมที่เคยเข้าร่วม โครงงานที่เคยทำ และผลการแข่งขันต่างๆ หากมีผลงานที่เกี่ยวข้องกับคอมพิวเตอร์หรือเทคโนโลยีโดยเฉพาะ จะได้รับการพิจารณาเป็นพิเศษ">
+                            Your portfolio should include your academic transcripts, activities you've participated in, past projects, and competition results. Projects or achievements specifically related to <strong>computers or technology</strong> will receive special consideration.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed lang" type="button" data-bs-toggle="collapse" data-bs-target="#faqInterview"
+                                data-en="What kind of questions are asked during the interview?"
+                                data-th="แนวคำถามในการสัมภาษณ์เป็นอย่างไร?">
+                            <i class="bi bi-chat-dots me-3"></i> What kind of questions are asked during the interview?
+                        </button>
+                    </h2>
+                    <div id="faqInterview" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            Students will be proficient in Python/C++ programming, 3D Design (CAD), Microcontroller
-                            integration, and Data Science. They will also have a portfolio of real-world AI prototypes.
+                            <span class="lang" data-en="Based on previous years, questions typically cover:" data-th="จากสถิติปีก่อนๆ คำถามมักจะครอบคลุมหัวข้อต่อไปนี้:">Based on previous years, questions typically cover:</span>
+                            <ul class="mt-2">
+                                <li class="lang" data-en="Self-introduction." data-th="การแนะนำตัว">Self-introduction.</li>
+                                <li class="lang" data-en="Previous programming experience and knowledge level." data-th="ประสบการณ์การเขียนโปรแกรมและระดับความรู้ที่มี">Previous programming experience and knowledge level.</li>
+                                <li class="lang" data-en="Why you want to join the E-AI major." data-th="ทำไมถึงอยากเข้าเรียนเอก E-AI">Why you want to join the E-AI major.</li>
+                                <li class="lang" data-en="What kind of senior project you would like to do." data-th="โครงงานจบการศึกษาที่อยากทำคืออะไร">What kind of senior project you would like to do.</li>
+                                <li class="lang" data-en="How you would use AI to benefit society." data-th="จะนำความรู้ AI ไปใช้ประโยชน์ต่อสังคมได้อย่างไร">How you would use AI to benefit society.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -280,12 +389,16 @@
         </div>
     </section>
 
+    
+
     <footer class="main-footer">
         <div class="container">
             <div class="row gy-4">
                 <div class="col-lg-4">
                     <a class="footer-logo" href="#">E-AI Major <span>Satit Prasarnmit</span></a>
-                    <p class="mt-3 footer-text">
+                    <p class="mt-3 footer-text lang"
+                        data-en="Empowering the next generation of AI innovators through hands-on robotics, data science, and engineering excellence."
+                        data-th="ส่งเสริมคนรุ่นใหม่สู่การเป็นนวัตกรด้าน AI ผ่านการเรียนรู้หุ่นยนต์ วิทยาการข้อมูล และความเป็นเลิศด้านวิศวกรรม">
                         Empowering the next generation of AI innovators through hands-on robotics,
                         data science, and engineering excellence.
                     </p>
@@ -304,20 +417,25 @@
                 </div>
 
                 <div class="col-lg-2 col-md-4 ms-lg-auto">
-                    <h5 class="footer-heading">Navigate</h5>
+                    <h5 class="footer-heading lang" data-en="Navigate" data-th="เมนู">Navigate</h5>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About E-AI</a></li>
-                        <li><a href="#academics">Alumni</a></li>
-                        <li><a href="#hall-of-fame">Achievements</a></li>
+                        <li><a href="index.html" class="lang" data-en="Home" data-th="หน้าหลัก">Home</a></li>
+                        <li><a href="curriculum.html" class="lang" data-en="About E-AI" data-th="เกี่ยวกับเรา">About
+                                E-AI</a></li>
+                        <li><a href="alumni.html" class="lang" data-en="Alumni" data-th="ศิษย์เก่า">Alumni</a></li>
+                        <li><a href="#hall-of-fame" class="lang" data-en="Achievements" data-th="ผลงาน">Achievements</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4">
-                    <h5 class="footer-heading">SPSM Official Contacts</h5>
+                    <h5 class="footer-heading lang" data-en="SPSM Official Contacts" data-th="การติดต่ออย่างเป็นทางการ">
+                        SPSM Official Contacts</h5>
                     <ul class="footer-contact">
-                        <li><i class="bi bi-geo-alt-fill"></i> Srinakharinwirot University Prasarnmit Demonstration
-                            School (Secondary)</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> <span class="lang"
+                                data-en="Srinakharinwirot University Prasarnmit Demonstration School (Secondary)"
+                                data-th="โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร (ฝ่ายมัธยม)">Srinakharinwirot
+                                University Prasarnmit Demonstration School (Secondary)</span></li>
                         <li><i class="bi bi-envelope-fill"></i> satitpsm.secondary@gmail.com</li>
                         <li><i class="bi bi-telephone-fill"></i> 02-260-9986</li>
                     </ul>
@@ -327,21 +445,22 @@
             <hr class="footer-divider">
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Artificial Intelligence Major Satit Prasarnmit. All rights reserved.</p>
+                <p class="lang"
+                    data-en="&copy; 2026 Artificial Intelligence Major Satit Prasarnmit. All rights reserved."
+                    data-th="&copy; 2026 วิชาเอกปัญญาประดิษฐ์ สาธิตประสานมิตร. สงวนลิขสิทธิ์ทั้งหมด.">&copy; 2026
+                    Artificial Intelligence Major Satit Prasarnmit. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
+                    <a href="#" class="lang" data-en="Privacy Policy" data-th="นโยบายความเป็นส่วนตัว">Privacy Policy</a>
+                    <a href="#" class="lang" data-en="Terms of Use" data-th="ข้อกำหนดการใช้งาน">Terms of Use</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 
-
 </html>
-
 
 
 
