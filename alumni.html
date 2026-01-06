@@ -23,15 +23,19 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto nav-links align-items-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="curriculum.html">About E-AI</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Alumni</a></li>
-                    <li class="nav-item"><a class="nav-link text-white"
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Home" data-th="หน้าหลัก"
+                            href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="About E-AI"
+                            data-th="เกี่ยวกับ E-AI" href="curriculum.html">About E-AI</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="News" data-th="ข่าวสาร"
+                            href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Alumni" data-th="ศิษย์เก่า"
+                            href="#">Alumni</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Contact" data-th="ติดต่อ"
                             href="https://linktr.ee/eaisatitpsm?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnwaCsmcwnSQnG0TkPJGgGh_SO1jbiPYik8-NaHzqU2ClP7HTSX3JdMEcU9bY_aem_JT9tkW3ldPv0pfjRWFzu8w">Contact</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <button class="cta-btn">Join Us</button>
+                        <button id="lang-switch" class="btn btn-outline-light btn-sm">TH</button>
                     </li>
                 </ul>
             </div>
@@ -41,8 +45,8 @@
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>E-AI Major Alumni</h1>
-            <p>Where did they go after psm ?</p>
+            <h1 class="lang" data-en="E-AI Major Alumni" data-th="ศิษย์เก่า E-AI">E-AI Major Alumni</h1>
+            <p class="lang" data-en="Where did they go after psm ?" data-th="ศิษย์เก่า E-AI ศึกษาต่อที่ไหน">Where did they go after psm ?</p>
         </div>
     </header>
 
@@ -1231,7 +1235,10 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 
+
 </html>
+
+
