@@ -23,37 +23,267 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto nav-links align-items-center">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">About E-AI</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="alumni.html">Alumni</a></li>
-                    <li class="nav-item"><a class="nav-link text-white"
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Home" data-th="หน้าหลัก"
+                            href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="About E-AI"
+                            data-th="เกี่ยวกับ E-AI" href="#">About E-AI</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="News" data-th="ข่าวสาร"
+                            href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Alumni" data-th="ศิษย์เก่า"
+                            href="alumni.html">Alumni</a></li>
+                    <li class="nav-item"><a class="nav-link text-white lang" data-en="Contact" data-th="ติดต่อ"
                             href="https://linktr.ee/eaisatitpsm?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnwaCsmcwnSQnG0TkPJGgGh_SO1jbiPYik8-NaHzqU2ClP7HTSX3JdMEcU9bY_aem_JT9tkW3ldPv0pfjRWFzu8w">Contact</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <button class="cta-btn">Join Us</button>
+                        <button id="lang-switch" class="btn btn-outline-light btn-sm">TH</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>About E-AI Major</h1>
-            <p>Why you should apply for E-AI ?</p>
+            <h1 class="lang" data-en="About E-AI Major" data-th="เกี่ยวกับวิชาเอก E-AI">About E-AI Major</h1>
+            <p class="lang" data-en="Why you should apply for E-AI?" data-th="ทำไมคุณควรสมัครเรียน E-AI ?">Why you
+                should apply for E-AI?</p>
         </div>
     </header>
 
+    <section id="about-eai" class="py-5" style="background: #000;">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-white mb-4 lang" data-en="What is E-AI?" data-th="E-AI คืออะไร?">
+                        What is <span class="text-danger">E-AI?</span></h2>
+                    <p class="text-secondary lang"
+                        data-en="At Satit Prasarnmit, the AI major is dedicated to creating the 'Brain'—the internal logic that allows machines to learn and decide independently."
+                        data-th="ที่สาธิตประสานมิตร สาขาวิชา AI มุ่งมั่นที่จะสร้าง 'สมอง' — หลักการภายในที่ช่วยให้เครื่องเรียนรู้และตัดสินใจได้อย่างอิสระ.">
+                        At Satit Prasarnmit, the AI major is dedicated to creating the <strong>"Brain"</strong>—the
+                        internal logic that allows machines to learn and decide independently.
+                    </p>
+                    <p class="text-secondary lang"
+                        data-en="In general, you will master Machine Intelligence & Algorithms. The track is specifically designed to be the school's most math-intensive and code-heavy path, focusing on image processing and algorithmic training to achieve true machine autonomy."
+                        data-th="โดยทั่วไปแล้ว คุณจะเชี่ยวชาญในด้านปัญญาประดิษฐ์และอัลกอริธึม เส้นทางนี้ถูกออกแบบมาให้เน้นคณิตศาสตร์และการเขียนโค้ดเป็นหลัก โดยมุ่งเน้นที่การประมวลผลภาพและการฝึกอบรมอัลกอริธึมเพื่อให้ได้มาซึ่งความเป็นอิสระที่แท้จริงของเครื่อง.">
+                        In general, you will master <strong>Machine Intelligence & Algorithms</strong>. The track is
+                        specifically designed to be the school's most <strong>math-intensive and code-heavy</strong>
+                        path, focusing on image processing and algorithmic training to achieve true machine autonomy.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="p-4 rounded-4" style="background: #080808; border: 1px solid #222;">
+                                <i class="bi bi-code-square text-danger fs-2 mb-3 d-block"></i>
+                                <h5 class="text-white h6 lang" data-en="Heavy Coding" data-th="การเขียนโค้ดหนัก">Heavy
+                                    Coding</h5>
+                                <p class="small text-secondary mb-0 lang"
+                                    data-en="Deep dive into Python and AI Programming from day one."
+                                    data-th="เริ่มต้นลึกลงไปใน Python และการเขียนโปรแกรม AI ตั้งแต่วันแรก.">Deep dive
+                                    into Python and AI Programming from day one.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-4 rounded-4" style="background: #080808; border: 1px solid #222;">
+                                <i class="bi bi-calculator text-danger fs-2 mb-3 d-block"></i>
+                                <h5 class="text-white h6 lang" data-en="Advanced Math" data-th="คณิตศาสตร์ขั้นสูง">
+                                    Advanced Math</h5>
+                                <p class="small text-secondary mb-0 lang"
+                                    data-en="The primary choice for students interested in high-level logic."
+                                    data-th="ตัวเลือกหลักสำหรับนักเรียนที่สนใจในด้านตรรกะระดับสูง.">The primary choice
+                                    for students interested in high-level logic.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-5 rounded-5" style="background: #050505; border: 1px solid #1a1a1a;">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h3 class="text-white fw-bold mb-4 lang" data-en="How we differ from other tech majors"
+                            data-th="เราต่างจากสาขาเทคโนโลยีอื่นๆ อย่างไร">How we differ from other tech majors</h3>
+                        <p class="text-secondary small mb-4 lang"
+                            data-en="While other majors build the 'body' or 'environment' of technology, we build the intelligence."
+                            data-th="ในขณะที่สาขาอื่นๆ สร้าง 'ร่างกาย' หรือ 'สิ่งแวดล้อม' ของเทคโนโลยี เราสร้างความฉลาด.">
+                            While other majors build the "body" or "environment" of technology, we build the
+                            intelligence.</p>
+
+                        <div class="d-flex mb-4">
+                            <div class="text-danger me-3"><i class="bi bi-cpu fs-4"></i></div>
+                            <div>
+                                <h6 class="text-white mb-1 lang" data-en="E-AI vs. Electrical (EE)"
+                                    data-th="E-AI vs. วิศวกรรมไฟฟ้า (EE)">E-AI vs. Electrical (EE)</h6>
+                                <p class="text-secondary small mb-0 lang"
+                                    data-en="EE builds physical hardware; AI builds the logic to control it."
+                                    data-th="EE สร้างฮาร์ดแวร์ทางกายภาพ; AI สร้างตรรกะในการควบคุมมัน.">EE builds
+                                    physical hardware; AI builds the logic to control it.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="text-danger me-3"><i class="bi bi-diagram-3 fs-4"></i></div>
+                            <div>
+                                <h6 class="text-white mb-1 lang" data-en="E-AI vs. Computer (CE)"
+                                    data-th="E-AI vs. วิศวกรรมคอมพิวเตอร์ (CE)">E-AI vs. Computer (CE)</h6>
+                                <p class="text-secondary small mb-0 lang"
+                                    data-en="CE sets up infrastructure; AI trains machines to think independently."
+                                    data-th="CE ตั้งค่าโครงสร้างพื้นฐาน; AI ฝึกเครื่องให้คิดอย่างอิสระ.">CE sets up
+                                    infrastructure; AI trains machines to think independently.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="table-responsive rounded-4 border border-secondary overflow-hidden">
+                            <table class="table table-dark table-hover mb-0 align-middle">
+                                <thead class="bg-dark">
+                                    <tr class="small text-uppercase text-secondary">
+                                        <th class="py-3 px-4 border-0 lang" data-en="Category" data-th="หมวดหมู่">
+                                            Category</th>
+                                        <th class="py-3 border-0 lang" data-en="Major" data-th="สาขาวิชา">Major</th>
+                                        <th class="py-3 border-0 lang" data-en="Primary Focus" data-th="จุดเน้นหลัก">
+                                            Primary Focus</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="small">
+                                    <tr style="background: rgba(220, 53, 69, 0.05);">
+                                        <td class="px-4 py-3 fw-bold text-white lang" data-en="Logic" data-th="ตรรกะ">
+                                            Logic</td>
+                                        <td class="py-3 text-danger fw-bold lang" data-en="AI" data-th="AI">AI</td>
+                                        <td class="py-3 text-white lang" data-en="Machine Intelligence & Algorithms"
+                                            data-th="ปัญญาประดิษฐ์ & อัลกอริธึม">Machine Intelligence & Algorithms</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-secondary lang" data-en="Hardware"
+                                            data-th="ฮาร์ดแวร์">Hardware</td>
+                                        <td class="py-3 text-secondary lang" data-en="EE" data-th="EE">EE</td>
+                                        <td class="py-3 text-secondary lang" data-en="Electrical Systems & Automotive"
+                                            data-th="ระบบไฟฟ้า & ยานยนต์">Electrical Systems & Automotive</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-secondary lang" data-en="Systems" data-th="ระบบ">
+                                            Systems</td>
+                                        <td class="py-3 text-secondary lang" data-en="CE" data-th="CE">CE</td>
+                                        <td class="py-3 text-secondary lang" data-en="Computer Networks & App Dev"
+                                            data-th="เครือข่ายคอมพิวเตอร์ & การพัฒนาแอพ">Computer Networks & App Dev
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-secondary lang" data-en="Data" data-th="ข้อมูล">Data
+                                        </td>
+                                        <td class="py-3 text-secondary lang" data-en="DE" data-th="DE">DE</td>
+                                        <td class="py-3 text-secondary lang" data-en="Big Data & Software Engineering"
+                                            data-th="ข้อมูลขนาดใหญ่ & วิศวกรรมซอฟต์แวร์">Big Data & Software Engineering
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-secondary lang" data-en="Society" data-th="สังคม">
+                                            Society</td>
+                                        <td class="py-3 text-secondary lang" data-en="GI" data-th="GI">GI</td>
+                                        <td class="py-3 text-secondary lang" data-en="Sustainable Innovation"
+                                            data-th="นวัตกรรมที่ยั่งยืน">Sustainable Innovation</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-3 text-secondary lang" data-en="Medical" data-th="การแพทย์">
+                                            Medical</td>
+                                        <td class="py-3 text-secondary lang" data-en="HT" data-th="HT">HT</td>
+                                        <td class="py-3 text-secondary lang" data-en="Medical Technology & Diagnostics"
+                                            data-th="เทคโนโลยีการแพทย์ & การวินิจฉัย">Medical Technology & Diagnostics
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pathways" class="py-5" style="background: #050505; border-top: 1px solid #1a1a1a;">
+        <div class="container py-4">
+            <h2 class="features-title lang" data-en="Your Journey in E-AI" data-th="เส้นทางของคุณใน E-AI">Your Journey
+                in E-AI</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="p-4 rounded-4 h-100" style="background: #000; border: 1px solid #222;">
+                        <div class="mb-3 text-danger"><i class="bi bi-book fs-2"></i></div>
+                        <h4 class="text-white mb-3 lang" data-en="What You'll Learn" data-th="คุณจะได้เรียนรู้อะไรบ้าง">
+                            What You'll Learn<br><small class="text-secondary"
+                                style="font-size: 0.6em;">(เรียนอะไรบ้าง)</small></h4>
+                        <ul class="text-secondary small list-unstyled">
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i> <strong class="lang" data-en="Basic"
+                                    data-th="พื้นฐาน">Basic</strong><br>
+                                Basic Python, C++, and Circuits</li>
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i> <strong class="lang"
+                                    data-en="Introduction to AI" data-th="การแนะนำ AI">Introduction to AI</strong><br>
+                                Chatbot, Image Processing, and Integration of AI </li>
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i> <strong class="lang"
+                                    data-en="Embedded Systems & Robotics" data-th="ระบบฝังตัวและหุ่นยนต์">Embedded
+                                    Systems & Robotics</strong><br>
+                                Microcontroller architecture<br>Motion principles
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="p-4 rounded-4 h-100" style="background: #000; border: 1px solid #222;">
+                        <div class="mb-3 text-danger"><i class="bi bi-mortarboard fs-2"></i></div>
+                        <h4 class="text-white mb-3 lang" data-en="Higher Education" data-th="การศึกษาระดับสูง">Higher
+                            Education<br>
+                            <small class="text-secondary" style="font-size: 0.6em;">(ไปเรียนต่ออะไรได้บ้าง)</small>
+                        </h4>
+                        <ul class="text-secondary small list-unstyled">
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i>
+                                CU (ISE): Robotics & AI Engineering</li>
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i>
+                                CU (CEDT): Computer Engineering</li>
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i>
+                                KMITL (SIIE): AI & Computer Engineering</li>
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i>
+                                KMITL(RAI): Robotics and AI Engineering</li>
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i>
+                                KMUTT (FIBO): Robotics & Automation Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="p-4 rounded-4 h-100" style="background: #000; border: 1px solid #222;">
+                        <div class="mb-3 text-danger"><i class="bi bi-briefcase fs-2"></i></div>
+                        <h4 class="text-white mb-3 lang" data-en="Career Opportunities" data-th="โอกาสในการทำงาน">Career
+                            Opportunities<br><small class="text-secondary"
+                                style="font-size: 0.6em;">(ทำงานอะไรได้บ้าง)</small></h4>
+                        <ul class="text-secondary small list-unstyled">
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i> <strong class="lang"
+                                    data-en="AI Developer" data-th="นักพัฒนา AI">AI Developer:</strong>
+                                Creating smart systems</li>
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i> <strong class="lang"
+                                    data-en="Data Scientist" data-th="นักวิทยาศาสตร์ข้อมูล">Data Scientist:</strong>
+                                Analyzing patterns for business</li>
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i> <strong class="lang"
+                                    data-en="Robotics Engineer" data-th="วิศวกรหุ่นยนต์">Robotics Engineer:</strong>
+                                Automating the physical world</li>
+                            <li class="mb-2"><i class="bi bi-dot text-danger"></i> <strong class="lang"
+                                    data-en="Software Engineer" data-th="วิศวกรซอฟต์แวร์">Software Engineer:</strong>
+                                Specialized in intelligent apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="curriculum" class="py-5" style="background: #050505;">
         <div class="container">
-            <h2 class="features-title">Core Curriculum</h2>
+            <h2 class="features-title lang" data-en="Core Curriculum" data-th="หลักสูตรแกน">Core Curriculum</h2>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="curriculum-card">
                         <div class="card-icon"><i class="bi bi-gear-wide-connected"></i></div>
-                        <h3>Engineering Physics</h3>
+                        <h3 lang data-en="Engineering Physics" data-th="ฟิสิกส์วิศวกรรม">Engineering Physics</h3>
                         <div class="grade-track">
                             <div class="grade-item">
                                 <span class="grade-badge">M.4</span>
@@ -72,30 +302,9 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="curriculum-card">
-                        <div class="card-icon"><i class="bi bi-calculator"></i></div>
-                        <h3>Advanced Mathematics</h3>
-                        <div class="grade-track">
-                            <div class="grade-item">
-                                <span class="grade-badge">M.4</span>
-                                <p>Logic, Real Number Systems, Geometry, Functions</p>
-                            </div>
-                            <div class="grade-item">
-                                <span class="grade-badge">M.5</span>
-                                <p>Logarithms, Trigonometry, Matrices, Vectors, Complex Numbers</p>
-                            </div>
-                            <div class="grade-item">
-                                <span class="grade-badge">M.6</span>
-                                <p>Calculus, Statistics, Probability</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
                     <div class="curriculum-card highlight-card">
                         <div class="card-icon"><i class="bi bi-cpu"></i></div>
-                        <h3>E-AI Core</h3>
+                        <h3 lang data-en="Major Period" data-th="ช่วงหลักสูตร">Major Period</h3>
                         <div class="grade-track">
                             <div class="grade-item">
                                 <span class="grade-badge">M.4</span>
@@ -112,13 +321,35 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="curriculum-card">
+                        <div class="card-icon"><i class="bi bi-calculator"></i></div>
+                        <h3 lang data-en="Advanced Mathematics" data-th="คณิตศาสตร์ขั้นสูง">Advanced Mathematics</h3>
+                        <div class="grade-track">
+                            <div class="grade-item">
+                                <span class="grade-badge">M.4</span>
+                                <p>Logic, Real Number Systems, Geometry, Functions</p>
+                            </div>
+                            <div class="grade-item">
+                                <span class="grade-badge">M.5</span>
+                                <p>Logarithms, Trigonometry, Matrices, Vectors, Complex Numbers</p>
+                            </div>
+                            <div class="grade-item">
+                                <span class="grade-badge">M.6</span>
+                                <p>Calculus, Statistics, Probability</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="tools" class="py-5" style="background: #050505;">
         <div class="container text-center">
-            <h2 class="features-title">Tools & Ecosystem</h2>
+            <h2 class="features-title lang" data-en="Tools & Ecosystem" data-th="เครื่องมือ & ระบบนิเวศ">Tools &
+                Ecosystem</h2>
             <div class="row row-cols-2 row-cols-md-4 g-4 opacity-75">
                 <div class="col"><i class="bi bi-code-slash fs-1 text-danger"></i>
                     <p>C++ / Python</p>
@@ -134,8 +365,11 @@
                 </div>
             </div>
             <div class="mt-5 p-4 border border-danger rounded d-inline-block">
-                <h5 class="text-white">MOU Partnership</h5>
-                <p class="mb-0 ">In collaboration with <strong>FIBO (Institute of Field Robotics)</strong></p>
+                <h5 class="text-white lang" data-en="MOU Partnership" data-th="ความร่วมมือ MOU">MOU Partnership</h5>
+                <p class="mb-0 lang" data-en="In collaboration with <strong>FIBO (Institute of Field Robotics)</strong>"
+                    data-th="ร่วมกับ <strong>FIBO (Institute of Field Robotics)</strong>">In collaboration with
+                    <strong>FIBO (Institute of Field Robotics)</strong>
+                </p>
             </div>
         </div>
     </section>
@@ -144,25 +378,30 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-end mb-4">
                 <div>
-                    <h2 class="news-title mb-1">Events</h2>
-                    <p class="text-secondary mb-0">Field Trips & Workshops</p>
+                    <h2 class="news-title mb-1 lang" data-en="Events" data-th="กิจกรรม">Events</h2>
+                    <p class="text-secondary mb-0 lang" data-en="Field Trips & Workshops"
+                        data-th="การเดินทางเพื่อการศึกษา & การฝึกอบรม">Field Trips & Workshops</p>
                 </div>
-                <a href="news.html" class="view-all-link">View all <i class="bi bi-chevron-right"></i></a>
+                <a href="news.html" class="view-all-link lang" data-en="View all" data-th="ดูทั้งหมด">View all <i
+                        class="bi bi-chevron-right"></i></a>
             </div>
 
             <div class="row g-4">
-
                 <div class="col-lg-4 col-md-6">
                     <div class="news-card">
                         <div class="news-card-body">
-                            <h3 class="news-heading text-danger">AI&EE Camp</h3>
+                            <h3 class="news-heading text-danger lang" data-en="AI & EE Camp" data-th="ค่าย AI & EE">AI &
+                                EE Camp</h3>
                             <p class="news-date">March 19, 2025</p>
-                            <p class="news-excerpt">After an inspiring first day of learning at PTT LNG, our students
-                                transitioned into an evening of connection and community.
-                                Held in Rayong as part of our Innovators Hackathon: Code & Create project, this bonding
-                                session brought together students from Grade 10 through Grade 12.
-                                It was a fantastic opportunity for our juniors and seniors to bridge the gap, share
-                                experiences, and build the teamwork skills essential for the hackathon ahead!</p>
+                            <p class="news-excerpt lang"
+                                data-en="After an inspiring first day of learning at PTT LNG, our students transitioned into an evening of connection and community. Held in Rayong as part of our Innovators Hackathon: Code & Create project, this bonding session brought together students from Grade 10 through Grade 12. It was a fantastic opportunity for our juniors and seniors to bridge the gap, share experiences, and build the teamwork skills essential for the hackathon ahead!"
+                                data-th="หลังจากวันที่แรกที่สร้างแรงบันดาลใจในการเรียนรู้ที่ PTT LNG นักเรียนของเราได้เปลี่ยนไปสู่ค่ำคืนแห่งการเชื่อมต่อและชุมชน จัดขึ้นที่ระยองเป็นส่วนหนึ่งของโครงการ Innovators Hackathon: Code & Create การประชุมเชิงป bonding นี้รวบรวมนักเรียนจากเกรด 10 ถึงเกรด 12 นี่เป็นโอกาสที่ยอดเยี่ยมสำหรับนักเรียนชั้นปีที่ 10 และ 12 ในการเชื่อมช่องว่าง แบ่งปันประสบการณ์ และสร้างทักษะการทำงานเป็นทีมที่จำเป็นต่อการแฮ็กกาธอนที่กำลังจะมาถึง!">
+                                After an inspiring first day of learning at PTT LNG, our students transitioned into an
+                                evening of connection and community. Held in Rayong as part of our Innovators Hackathon:
+                                Code & Create project, this bonding session brought together students from Grade 10
+                                through Grade 12. It was a fantastic opportunity for our juniors and seniors to bridge
+                                the gap, share experiences, and build the teamwork skills essential for the hackathon
+                                ahead!</p>
                             <div class="news-tags">
                                 <span class="news-tag">Camp</span>
                                 <span class="news-tag">M.4</span>
@@ -176,13 +415,18 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="news-card">
                         <div class="news-card-body">
-                            <h3 class="news-heading text-danger">Educational Trip: MRT Chalong Ratchadham Line</h3>
+                            <h3 class="news-heading text-danger lang"
+                                data-en="Educational Trip: MRT Chalong Ratchadham Line"
+                                data-th="ทัศนศึกษา: สาย MRT ชลอัดรัชดา">Educational Trip: MRT Chalong Ratchadham Line
+                            </h3>
                             <p class="news-date">June 28, 2024</p>
-                            <p class="news-excerpt">Students attended a lecture and went on a site visit to the
-                                Operations Control Center and Main Depot of the MRT Chalong Ratchadham Line (Purple
-                                Line).
-                                This activity aimed to provide hands-on experience and expand learning beyond the
-                                classroom by allowing students to learn directly from industry experts.</p>
+                            <p class="news-excerpt lang"
+                                data-en="Students attended a lecture and went on a site visit to the Operations Control Center and Main Depot of the MRT Chalong Ratchadham Line (Purple Line). This activity aimed to provide hands-on experience and expand learning beyond the classroom by allowing students to learn directly from industry experts."
+                                data-th="นักเรียนเข้าร่วมบรรยายและไปเยี่ยมชมศูนย์ควบคุมการดำเนินงานและคลังหลักของสาย MRT ชลอัดรัชดา (สายม่วง) กิจกรรมนี้มีวัตถุประสงค์เพื่อให้ประสบการณ์ที่มีความหมายและขยายการเรียนรู้ให้นอกห้องเรียน โดยให้นักเรียนได้เรียนรู้จากผู้เชี่ยวชาญในอุตสาหกรรมโดยตรง.">
+                                Students attended a lecture and went on a site visit to the Operations Control Center
+                                and Main Depot of the MRT Chalong Ratchadham Line (Purple Line). This activity aimed to
+                                provide hands-on experience and expand learning beyond the classroom by allowing
+                                students to learn directly from industry experts.</p>
                             <div class="news-tags">
                                 <span class="news-tag">Field Trip</span>
                                 <span class="news-tag">M.5</span>
@@ -194,14 +438,19 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="news-card">
                         <div class="news-card-body">
-                            <h3 class="news-heading text-danger">2024 Freshmen Welcoming Activity (COM Major)</h3>
+                            <h3 class="news-heading text-danger lang"
+                                data-en="2024 Freshmen Welcoming Activity (COM Major)"
+                                data-th="กิจกรรมต้อนรับนักศึกษาใหม่ปี 2024 (สาขา COM)">2024 Freshmen Welcoming Activity
+                                (COM Major)</h3>
                             <p class="news-date">June 26, 2024</p>
-                            <p class="news-excerpt">our Grade 11 students organized a vibrant Freshmen Welcoming
-                                Activity for the incoming Grade 10 class.
-                                Students from the AI, IM, EE, CE, and DE majors joined together for a day of bonding and
-                                fun.
-                                The event was designed to help new students settle into school life while strengthening
-                                the friendship and connection between different year levels.</p>
+                            <p class="news-excerpt lang"
+                                data-en="Our Grade 11 students organized a vibrant Freshmen Welcoming Activity for the incoming Grade 10 class. Students from the AI, IM, EE, CE, and DE majors joined together for a day of bonding and fun. The event was designed to help new students settle into school life while strengthening the friendship and connection between different year levels."
+                                data-th="นักเรียนชั้น ม.11 ของเราได้จัดกิจกรรมต้อนรับนักศึกษาใหม่อย่างมีชีวิตชีวาสำหรับนักเรียนชั้น ม.10 ที่เข้ามา นักเรียนจากสาขา AI, IM, EE, CE และ DE ได้มารวมตัวกันในวันแห่งมิตรภาพและความสนุกสนาน กิจกรรมนี้ถูกออกแบบมาเพื่อช่วยให้นักเรียนใหม่ปรับตัวเข้ากับชีวิตในโรงเรียนในขณะที่เสริมสร้างมิตรภาพและการเชื่อมโยงระหว่างระดับปีที่แตกต่างกัน.">
+                                Our Grade 11 students organized a vibrant Freshmen Welcoming Activity for the incoming
+                                Grade 10 class. Students from the AI, IM, EE, CE, and DE majors joined together for a
+                                day of bonding and fun. The event was designed to help new students settle into school
+                                life while strengthening the friendship and connection between different year levels.
+                            </p>
                             <div class="news-tags">
                                 <span class="news-tag">Buddy</span>
                                 <span class="news-tag">M.4</span>
@@ -210,55 +459,75 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <section id="graduation-criteria" class="py-5" style="background: #050505;">
         <div class="container">
-            <h2 class="features-title">Graduation Requirements</h2>
+            <h2 class="features-title lang" data-en="Graduation Requirements" data-th="ข้อกำหนดการสำเร็จการศึกษา">
+                Graduation Requirements</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="criteria-wrapper p-4 p-md-5">
-                        <p class="text-center mb-5 opacity-75">Students in the E-AI major must fulfill these criteria by
-                            the end of M.6 Semester 1:</p>
+                        <p class="text-center mb-5 opacity-75 lang"
+                            data-en="Students in the E-AI major must fulfill these criteria by the end of M.6 Semester 1:"
+                            data-th="นักเรียนในสาขา E-AI ต้องปฏิบัติตามเกณฑ์เหล่านี้ให้ครบถ้วนภายในสิ้นภาคการศึกษา 1 ของ ม.6:">
+                            Students in the E-AI major must fulfill these criteria by the end of M.6 Semester 1:</p>
 
                         <div class="criteria-grid">
                             <div class="criteria-item">
                                 <i class="bi bi-check-circle-fill text-danger"></i>
-                                <p>Attend at least one Major Camp during the 3-year program and participate in the Major
-                                    Orientation academic event.</p>
+                                <p class="lang"
+                                    data-en="Attend at least one Major Camp during the 3-year program and participate in the Major Orientation academic event."
+                                    data-th="เข้าร่วมค่ายสาขาวิชาอย่างน้อย 1 ค่ายในระหว่างโปรแกรม 3 ปี และเข้าร่วมกิจกรรมปฐมนิเทศสาขาวิชา.">
+                                    Attend at least one Major Camp during the 3-year program and participate in the
+                                    Major Orientation academic event.</p>
                             </div>
 
                             <div class="criteria-item">
                                 <i class="bi bi-check-circle-fill text-danger"></i>
-                                <p>Participate in at least 2 skill development activities (proof of participation
+                                <p class="lang"
+                                    data-en="Participate in at least 2 skill development activities (proof of participation required)."
+                                    data-th="เข้าร่วมกิจกรรมพัฒนาทักษะอย่างน้อย 2 กิจกรรม (ต้องมีหลักฐานการเข้าร่วม).">
+                                    Participate in at least 2 skill development activities (proof of participation
                                     required).</p>
                             </div>
 
                             <div class="criteria-item">
                                 <i class="bi bi-check-circle-fill text-danger"></i>
-                                <p>Enter at least one innovation, engineering, computer, or technology
+                                <p class="lang"
+                                    data-en="Enter at least one innovation, engineering, computer, or technology competition/exhibition."
+                                    data-th="เข้าร่วมการแข่งขัน/การแสดงนวัตกรรม วิศวกรรม คอมพิวเตอร์ หรือเทคโนโลยีอย่างน้อย 1 รายการ.">
+                                    Enter at least one innovation, engineering, computer, or technology
                                     competition/exhibition.</p>
                             </div>
 
                             <div class="criteria-item">
                                 <i class="bi bi-check-circle-fill text-danger"></i>
-                                <p>Attend a study field trip organized by the school in a relevant engineering or
+                                <p class="lang"
+                                    data-en="Attend a study field trip organized by the school in a relevant engineering or technology sector."
+                                    data-th="เข้าร่วมการศึกษาทัศนศึกษาโดยโรงเรียนในภาควิศวกรรมหรือเทคโนโลยีที่เกี่ยวข้อง.">
+                                    Attend a study field trip organized by the school in a relevant engineering or
                                     technology sector.</p>
                             </div>
 
                             <div class="criteria-item">
                                 <i class="bi bi-check-circle-fill text-danger"></i>
-                                <p>Develop a project based on personal interest and present it at an internal or
+                                <p class="lang"
+                                    data-en="Develop a project based on personal interest and present it at an internal or external exhibition."
+                                    data-th="พัฒนาผลงานที่มีพื้นฐานจากความสนใจส่วนตัวและนำเสนอในงานแสดงภายในหรือภายนอก.">
+                                    Develop a project based on personal interest and present it at an internal or
                                     external exhibition.</p>
                             </div>
 
                             <div class="criteria-item">
                                 <i class="bi bi-check-circle-fill text-danger"></i>
                                 <div class="w-100">
-                                    <p>Submit scores from at least 1 English Proficiency Test (e.g., IELTS, TOEIC,
+                                    <p class="lang"
+                                        data-en="Submit scores from at least 1 English Proficiency Test (e.g., IELTS, TOEIC, CU-TEP, TU-GET) by M.6 Semester 1 (no minimum score required)."
+                                        data-th="ส่งคะแนนจากการสอบความสามารถทางภาษาอังกฤษอย่างน้อย 1 รายการ (เช่น IELTS, TOEIC, CU-TEP, TU-GET) ภายในภาคการศึกษา 1 ของ ม.6 (ไม่จำเป็นต้องมีคะแนนขั้นต่ำ).">
+                                        Submit scores from at least 1 English Proficiency Test (e.g., IELTS, TOEIC,
                                         CU-TEP, TU-GET) by M.6 Semester 1 (no minimum score required).</p>
                                 </div>
                             </div>
@@ -274,7 +543,9 @@
             <div class="row gy-4">
                 <div class="col-lg-4">
                     <a class="footer-logo" href="#">E-AI Major <span>Satit Prasarnmit</span></a>
-                    <p class="mt-3 footer-text">
+                    <p class="mt-3 footer-text lang"
+                        data-en="Empowering the next generation of AI innovators through hands-on robotics, data science, and engineering excellence."
+                        data-th="ส่งเสริมคนรุ่นใหม่สู่การเป็นนวัตกรด้าน AI ผ่านการเรียนรู้หุ่นยนต์ วิทยาการข้อมูล และความเป็นเลิศด้านวิศวกรรม">
                         Empowering the next generation of AI innovators through hands-on robotics,
                         data science, and engineering excellence.
                     </p>
@@ -285,7 +556,7 @@
                             href="https://line.me/ti/g2/ndaO79KTfMgATFzG51IhHQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default"><i
                                 class="bi bi-line"></i></a>
                         <a href="https://www.tiktok.com/@e.ai_official?_t=zs-8t3rzkjxgyw&_r=1"><i
-                                class="bi bi-tiktok"></i></a>
+                                class="bi bi-tiktok"></i> </a>
                         <a
                             href="https://sites.google.com/view/eai-official/%E0%B9%80%E0%B8%81%E0%B8%A2%E0%B8%A7%E0%B8%81%E0%B8%9A%E0%B8%A7%E0%B8%8A%E0%B8%B2%E0%B9%80%E0%B8%AD%E0%B8%81"><i
                                 class="bi bi-globe"></i></a>
@@ -293,20 +564,25 @@
                 </div>
 
                 <div class="col-lg-2 col-md-4 ms-lg-auto">
-                    <h5 class="footer-heading">Navigate</h5>
+                    <h5 class="footer-heading lang" data-en="Navigate" data-th="เมนู">Navigate</h5>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About E-AI</a></li>
-                        <li><a href="#academics">Alumni</a></li>
-                        <li><a href="#hall-of-fame">Achievements</a></li>
+                        <li><a href="index.html" class="lang" data-en="Home" data-th="หน้าหลัก">Home</a></li>
+                        <li><a href="curriculum.html" class="lang" data-en="About E-AI" data-th="เกี่ยวกับเรา">About
+                                E-AI</a></li>
+                        <li><a href="alumni.html" class="lang" data-en="Alumni" data-th="ศิษย์เก่า">Alumni</a></li>
+                        <li><a href="#hall-of-fame" class="lang" data-en="Achievements" data-th="ผลงาน">Achievements</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-4">
-                    <h5 class="footer-heading">SPSM Official Contacts</h5>
+                    <h5 class="footer-heading lang" data-en="SPSM Official Contacts" data-th="การติดต่ออย่างเป็นทางการ">
+                        SPSM Official Contacts</h5>
                     <ul class="footer-contact">
-                        <li><i class="bi bi-geo-alt-fill"></i> Srinakharinwirot University Prasarnmit Demonstration
-                            School (Secondary)</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> <span class="lang"
+                                data-en="Srinakharinwirot University Prasarnmit Demonstration School (Secondary)"
+                                data-th="โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร (ฝ่ายมัธยม)">Srinakharinwirot
+                                University Prasarnmit Demonstration School (Secondary)</span></li>
                         <li><i class="bi bi-envelope-fill"></i> satitpsm.secondary@gmail.com</li>
                         <li><i class="bi bi-telephone-fill"></i> 02-260-9986</li>
                     </ul>
@@ -316,16 +592,19 @@
             <hr class="footer-divider">
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Artificial Intelligence Major Satit Prasarnmit. All rights reserved.</p>
+                <p class="lang"
+                    data-en="&copy; 2026 Artificial Intelligence Major Satit Prasarnmit. All rights reserved."
+                    data-th="&copy; 2026 วิชาเอกปัญญาประดิษฐ์ สาธิตประสานมิตร. สงวนลิขสิทธิ์ทั้งหมด.">&copy; 2026
+                    Artificial Intelligence Major Satit Prasarnmit. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
+                    <a href="#" class="lang" data-en="Privacy Policy" data-th="นโยบายความเป็นส่วนตัว">Privacy Policy</a>
+                    <a href="#" class="lang" data-en="Terms of Use" data-th="ข้อกำหนดการใช้งาน">Terms of Use</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
